@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.12a7881e.chunk.css",
-    "main.js": "/static/js/main.372b0f82.chunk.js",
-    "main.js.map": "/static/js/main.372b0f82.chunk.js.map",
+    "main.js": "/static/js/main.bd03454d.chunk.js",
+    "main.js.map": "/static/js/main.bd03454d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.591f3aa4.js",
     "runtime-main.js.map": "/static/js/runtime-main.591f3aa4.js.map",
     "static/css/2.2fee6c4b.chunk.css": "/static/css/2.2fee6c4b.chunk.css",
@@ -12,11 +12,11 @@
     "static/css/2.2fee6c4b.chunk.css.map": "/static/css/2.2fee6c4b.chunk.css.map",
     "static/css/main.12a7881e.chunk.css.map": "/static/css/main.12a7881e.chunk.css.map",
     "static/js/2.c8d1826f.chunk.js.LICENSE.txt": "/static/js/2.c8d1826f.chunk.js.LICENSE.txt",
-    "static/media/EDM20.6b65c266.png": "/static/media/EDM20.6b65c266.png",
     "static/media/GSB LOGO.ae515ba2.png": "/static/media/GSB LOGO.ae515ba2.png",
     "static/media/KCC Logo.a07837b2.png": "/static/media/KCC Logo.a07837b2.png",
     "static/media/KEC Logo.abd0d07f.png": "/static/media/KEC Logo.abd0d07f.png",
     "static/media/KS LOGO.db59c1d7.png": "/static/media/KS LOGO.db59c1d7.png",
+    "static/media/KSC2021.1e73c11a.png": "/static/media/KSC2021.1e73c11a.png",
     "static/media/KU_Logo.8b84eb4b.png": "/static/media/KU_Logo.8b84eb4b.png",
     "static/media/Newkru Logo.4196ec1a.png": "/static/media/Newkru Logo.4196ec1a.png",
     "static/media/SIBA LOGO.bbc734d0.png": "/static/media/SIBA LOGO.bbc734d0.png",
@@ -56,6 +56,6 @@
     "static/css/2.2fee6c4b.chunk.css",
     "static/js/2.c8d1826f.chunk.js",
     "static/css/main.12a7881e.chunk.css",
-    "static/js/main.372b0f82.chunk.js"
+    "static/js/main.bd03454d.chunk.js"
   ]
 }
