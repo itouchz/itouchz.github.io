@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1adf08a.css",
-    "main.js": "/static/js/main.d96f6b82.js",
+    "main.css": "/static/css/main.89749a99.css",
+    "main.js": "/static/js/main.faebdf7e.js",
     "static/js/787.301ade3c.chunk.js": "/static/js/787.301ade3c.chunk.js",
     "static/media/medal.jpg": "/static/media/medal.d9c94123784765160d64.jpg",
     "static/media/kpopcamp.jpg": "/static/media/kpopcamp.8a32ff26b90aa6b74c03.jpg",
-    "static/media/profile.jpg": "/static/media/profile.6884ff3cf0543a886252.jpg",
     "static/media/gmm.jpg": "/static/media/gmm.0b48aa31004996ecc8e5.jpg",
     "static/media/algocamp.jpg": "/static/media/algocamp.5399583b59c352fbae97.jpg",
     "static/media/devcamp.jpg": "/static/media/devcamp.5297e57fd4a180ba5692.jpg",
@@ -15,7 +14,6 @@
     "static/media/siammos2.jpg": "/static/media/siammos2.9233ef133870001ee95d.jpg",
     "static/media/cs2555.jpg": "/static/media/cs2555.0fe9e5f1173391b5ce5f.jpg",
     "static/media/mos1.jpg": "/static/media/mos1.0b1004594cc4470237c0.jpg",
-    "static/media/MG_TAR.png": "/static/media/MG_TAR.f15afed706644b63d406.png",
     "static/media/cs2557.jpg": "/static/media/cs2557.7c1cbb2e35bfb56b6bcb.jpg",
     "static/media/sc2557.jpg": "/static/media/sc2557.2220e445a77e63086e11.jpg",
     "static/media/acm.jpg": "/static/media/acm.6494affa7798c376b63f.jpg",
@@ -28,8 +26,10 @@
     "static/media/royal-award.jpg": "/static/media/royal-award.c504c2642b7cbd02a67e.jpg",
     "static/media/kec.jpg": "/static/media/kec.6218e5adea338ae6632a.jpg",
     "static/media/royal.jpg": "/static/media/royal.1093d4a29546f4046c64.jpg",
+    "static/media/profile.jpg": "/static/media/profile.cf04a32d6267be84bbb2.jpg",
     "static/media/hhi1.jpg": "/static/media/hhi1.7e89f172ad9495e0b18b.jpg",
     "static/media/siammos1.jpg": "/static/media/siammos1.aeba875ec76047f6409f.jpg",
+    "static/media/TimeCAD_ECMLPKDD_23.png": "/static/media/TimeCAD_ECMLPKDD_23.3939d6a6639a0ed8139c.png",
     "static/media/KS LOGO.png": "/static/media/KS LOGO.db59c1d7ea85901a42d2.png",
     "static/media/line.jpg": "/static/media/line.e4f1deee5c91c4576e39.jpg",
     "static/media/AnoViz_AAAI23.png": "/static/media/AnoViz_AAAI23.4c986fea4efa2072c8d1.png",
@@ -41,12 +41,12 @@
     "static/media/GSB LOGO.png": "/static/media/GSB LOGO.ae515ba2116d5e9386d4.png",
     "static/media/Newkru Logo.png": "/static/media/Newkru Logo.4196ec1abc2f5f60c89b.png",
     "index.html": "/index.html",
-    "main.b1adf08a.css.map": "/static/css/main.b1adf08a.css.map",
-    "main.d96f6b82.js.map": "/static/js/main.d96f6b82.js.map",
+    "main.89749a99.css.map": "/static/css/main.89749a99.css.map",
+    "main.faebdf7e.js.map": "/static/js/main.faebdf7e.js.map",
     "787.301ade3c.chunk.js.map": "/static/js/787.301ade3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1adf08a.css",
-    "static/js/main.d96f6b82.js"
+    "static/css/main.89749a99.css",
+    "static/js/main.faebdf7e.js"
   ]
 }
