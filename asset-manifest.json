@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.89749a99.css",
-    "main.js": "/static/js/main.faebdf7e.js",
+    "main.js": "/static/js/main.8c31f0d6.js",
     "static/js/787.301ade3c.chunk.js": "/static/js/787.301ade3c.chunk.js",
     "static/media/medal.jpg": "/static/media/medal.d9c94123784765160d64.jpg",
     "static/media/kpopcamp.jpg": "/static/media/kpopcamp.8a32ff26b90aa6b74c03.jpg",
@@ -29,6 +29,7 @@
     "static/media/profile.jpg": "/static/media/profile.cf04a32d6267be84bbb2.jpg",
     "static/media/hhi1.jpg": "/static/media/hhi1.7e89f172ad9495e0b18b.jpg",
     "static/media/siammos1.jpg": "/static/media/siammos1.aeba875ec76047f6409f.jpg",
+    "static/media/yearend_2019.jpg": "/static/media/yearend_2019.c4ac826a6613bb5093dd.jpg",
     "static/media/TimeCAD_ECMLPKDD_23.png": "/static/media/TimeCAD_ECMLPKDD_23.3939d6a6639a0ed8139c.png",
     "static/media/KS LOGO.png": "/static/media/KS LOGO.db59c1d7ea85901a42d2.png",
     "static/media/line.jpg": "/static/media/line.e4f1deee5c91c4576e39.jpg",
@@ -42,11 +43,11 @@
     "static/media/Newkru Logo.png": "/static/media/Newkru Logo.4196ec1abc2f5f60c89b.png",
     "index.html": "/index.html",
     "main.89749a99.css.map": "/static/css/main.89749a99.css.map",
-    "main.faebdf7e.js.map": "/static/js/main.faebdf7e.js.map",
+    "main.8c31f0d6.js.map": "/static/js/main.8c31f0d6.js.map",
     "787.301ade3c.chunk.js.map": "/static/js/787.301ade3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89749a99.css",
-    "static/js/main.faebdf7e.js"
+    "static/js/main.8c31f0d6.js"
   ]
 }
