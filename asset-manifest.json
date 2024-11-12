@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.89749a99.css",
-    "main.js": "/static/js/main.8c31f0d6.js",
-    "static/js/787.301ade3c.chunk.js": "/static/js/787.301ade3c.chunk.js",
+    "main.css": "/static/css/main.892f45db.css",
+    "main.js": "/static/js/main.85f6fcd3.js",
+    "static/js/453.7874b93c.chunk.js": "/static/js/453.7874b93c.chunk.js",
     "static/media/medal.jpg": "/static/media/medal.d9c94123784765160d64.jpg",
     "static/media/kpopcamp.jpg": "/static/media/kpopcamp.8a32ff26b90aa6b74c03.jpg",
     "static/media/gmm.jpg": "/static/media/gmm.0b48aa31004996ecc8e5.jpg",
@@ -15,6 +15,7 @@
     "static/media/cs2555.jpg": "/static/media/cs2555.0fe9e5f1173391b5ce5f.jpg",
     "static/media/mos1.jpg": "/static/media/mos1.0b1004594cc4470237c0.jpg",
     "static/media/cs2557.jpg": "/static/media/cs2557.7c1cbb2e35bfb56b6bcb.jpg",
+    "static/media/profile.jpg": "/static/media/profile.bd2b678a0698a938537b.jpg",
     "static/media/sc2557.jpg": "/static/media/sc2557.2220e445a77e63086e11.jpg",
     "static/media/acm.jpg": "/static/media/acm.6494affa7798c376b63f.jpg",
     "static/media/sc2555.jpg": "/static/media/sc2555.e9ea565e9df0a45ba04b.jpg",
@@ -26,28 +27,28 @@
     "static/media/royal-award.jpg": "/static/media/royal-award.c504c2642b7cbd02a67e.jpg",
     "static/media/kec.jpg": "/static/media/kec.6218e5adea338ae6632a.jpg",
     "static/media/royal.jpg": "/static/media/royal.1093d4a29546f4046c64.jpg",
-    "static/media/profile.jpg": "/static/media/profile.cf04a32d6267be84bbb2.JPG",
     "static/media/hhi1.jpg": "/static/media/hhi1.7e89f172ad9495e0b18b.jpg",
+    "static/media/PASTA_TETCI.png": "/static/media/PASTA_TETCI.fa30f4931c8e7bf60de4.png",
     "static/media/siammos1.jpg": "/static/media/siammos1.aeba875ec76047f6409f.jpg",
     "static/media/yearend_2019.jpg": "/static/media/yearend_2019.c4ac826a6613bb5093dd.jpg",
     "static/media/TimeCAD_ECMLPKDD_23.png": "/static/media/TimeCAD_ECMLPKDD_23.3939d6a6639a0ed8139c.png",
     "static/media/KS LOGO.png": "/static/media/KS LOGO.db59c1d7ea85901a42d2.png",
     "static/media/line.jpg": "/static/media/line.e4f1deee5c91c4576e39.jpg",
-    "static/media/AnoViz_AAAI23.png": "/static/media/AnoViz_AAAI23.4c986fea4efa2072c8d1.png",
     "static/media/KEC Logo.png": "/static/media/KEC Logo.abd0d07fc262cdfff6d5.png",
     "static/media/SIBA LOGO.png": "/static/media/SIBA LOGO.bbc734d0c6b1b5921edd.png",
     "static/media/KU_Logo.png": "/static/media/KU_Logo.8b84eb4ba191930f0b26.png",
     "static/media/KCC Logo.png": "/static/media/KCC Logo.a07837b2718c63943a6f.png",
     "static/media/SOBTID LOGO.png": "/static/media/SOBTID LOGO.21140f17ab369cb27f23.png",
     "static/media/GSB LOGO.png": "/static/media/GSB LOGO.ae515ba2116d5e9386d4.png",
+    "static/media/DeepAuto_Logo.png": "/static/media/DeepAuto_Logo.d01f87e48873dbc818b2.png",
     "static/media/Newkru Logo.png": "/static/media/Newkru Logo.4196ec1abc2f5f60c89b.png",
     "index.html": "/index.html",
-    "main.89749a99.css.map": "/static/css/main.89749a99.css.map",
-    "main.8c31f0d6.js.map": "/static/js/main.8c31f0d6.js.map",
-    "787.301ade3c.chunk.js.map": "/static/js/787.301ade3c.chunk.js.map"
+    "main.892f45db.css.map": "/static/css/main.892f45db.css.map",
+    "main.85f6fcd3.js.map": "/static/js/main.85f6fcd3.js.map",
+    "453.7874b93c.chunk.js.map": "/static/js/453.7874b93c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89749a99.css",
-    "static/js/main.8c31f0d6.js"
+    "static/css/main.892f45db.css",
+    "static/js/main.85f6fcd3.js"
   ]
 }
