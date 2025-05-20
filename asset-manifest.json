@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.892f45db.css",
-    "main.js": "/static/js/main.b85b6a83.js",
+    "main.js": "/static/js/main.5592a1c6.js",
     "static/js/453.7874b93c.chunk.js": "/static/js/453.7874b93c.chunk.js",
     "static/media/medal.jpg": "/static/media/medal.d9c94123784765160d64.jpg",
     "static/media/kpopcamp.jpg": "/static/media/kpopcamp.8a32ff26b90aa6b74c03.jpg",
@@ -44,11 +44,11 @@
     "static/media/Newkru Logo.png": "/static/media/Newkru Logo.4196ec1abc2f5f60c89b.png",
     "index.html": "/index.html",
     "main.892f45db.css.map": "/static/css/main.892f45db.css.map",
-    "main.b85b6a83.js.map": "/static/js/main.b85b6a83.js.map",
+    "main.5592a1c6.js.map": "/static/js/main.5592a1c6.js.map",
     "453.7874b93c.chunk.js.map": "/static/js/453.7874b93c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.892f45db.css",
-    "static/js/main.b85b6a83.js"
+    "static/js/main.5592a1c6.js"
   ]
 }
