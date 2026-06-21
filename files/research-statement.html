@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research Statement — Patara Trirat</title>
+  <meta name="author" content="Patara Trirat" />
+  <meta name="description"
+    content="Research statement of Patara Trirat — agent-based task automation, autonomous agents, and multimodal reasoning over real-world temporal data." />
+  <style>
+    :root {
+      --green: #4caf50;
+      --blue: #2196f3;
+      --dark: #212121;
+      --ink: #1f1f1f;
+      --muted: #5c5c5c;
+      --rule: #e0e0e0;
+      --measure: 47rem;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 17px;
+    }
+
+    body {
+      margin: 0;
+      padding: 48px 24px 96px;
+      color: var(--ink);
+      background: #ccc;
+      font-family: var(--sans);
+      line-height: 1.62;
+    }
+
+    .sheet {
+      max-width: var(--measure);
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 2px 4px 24px 2px rgba(21, 21, 21, 0.18);
+    }
+
+    header.doc {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 40px 56px 30px;
+      border-bottom: 4px solid var(--green);
+    }
+
+    header.doc h1 {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+
+    header.doc .who {
+      font-size: 1.16rem;
+      font-weight: 700;
+      margin: 2px 0;
+      color: var(--green);
+    }
+
+    header.doc .meta {
+      color: #cfcfcf;
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+
+    header.doc .meta a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid var(--green);
+    }
+
+    .body-wrap {
+      padding: 30px 56px 44px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 30px 0 8px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--green);
+      color: var(--dark);
+    }
+
+    h2 .num {
+      color: var(--green);
+      margin-right: 0.5ch;
+    }
+
+    h3 {
+      font-size: 1.06rem;
+      margin: 22px 0 4px;
+      color: var(--dark);
+    }
+
+    h4 {
+      font-size: 0.97rem;
+      font-weight: 700;
+      margin: 15px 0 2px;
+      color: var(--dark);
+    }
+
+    h4 .sn {
+      color: var(--green);
+      margin-right: 0.5ch;
+    }
+
+    p {
+      margin: 0 0 12px;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .lead {
+      font-size: 1.0rem;
+    }
+
+    .runin {
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    ul {
+      margin: 0 0 12px;
+      padding-left: 1.3rem;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #2e7d32;
+    }
+
+    .pub {
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .reflist {
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #333;
+      counter-reset: ref;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .reflist li {
+      padding-left: 2.2rem;
+      text-indent: -2.2rem;
+      margin-bottom: 7px;
+    }
+
+    .reflist li::before {
+      counter-increment: ref;
+      content: "[" counter(ref) "] ";
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .reflist u {
+      text-decoration-color: var(--green);
+    }
+
+    footer.doc {
+      margin: 0;
+      padding: 16px 56px;
+      background: #fafafa;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    .toolbar {
+      max-width: var(--measure);
+      margin: 0 auto 16px;
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .toolbar a {
+      font-size: 0.82rem;
+      text-decoration: none;
+      color: #fff;
+      background: var(--dark);
+      border-radius: 4px;
+      padding: 6px 14px;
+    }
+
+    .toolbar a.alt {
+      background: var(--green);
+    }
+
+    .toolbar a:hover {
+      opacity: 0.88;
+    }
+
+    @media print {
+      html {
+        font-size: 10.5pt;
+      }
+
+      body {
+        padding: 0;
+        background: #fff;
+      }
+
+      .sheet {
+        max-width: none;
+        box-shadow: none;
+      }
+
+      header.doc {
+        padding: 26px 0 18px;
+      }
+
+      .body-wrap {
+        padding: 22px 0 0;
+      }
+
+      footer.doc {
+        padding: 14px 0;
+        background: #fff;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      h2,
+      h3,
+      h4 {
+        page-break-after: avoid;
+      }
+
+      p,
+      li {
+        orphans: 3;
+        widows: 3;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="toolbar">
+    <a href="research-statement-brief.html">Read abridged version</a>
+    <a class="alt" href="research-statement.pdf">Download PDF</a>
+  </div>
+
+  <article class="sheet">
+    <header class="doc">
+      <h1>RESEARCH STATEMENT</h1>
+      <div class="who">Patara Trirat</div>
+      <div class="meta">
+        AI Research Scientist &nbsp;·&nbsp; Ph.D., KAIST School of Computing<br />
+        <a href="mailto:patara.t@kaist.ac.kr">patara.t@kaist.ac.kr</a> &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/itouchz/">LinkedIn</a> &nbsp;·&nbsp;
+        <a href="https://scholar.google.com/citations?user=fDZjV8EAAAAJ">Google Scholar</a>
+      </div>
+    </header>
+
+    <div class="body-wrap">
+      <h2><span class="num">1.</span>Research Interests and Vision</h2>
+      <p class="lead">
+        <span class="runin">Research Interests:</span> As an AI research scientist, I am passionate about
+        advancing agent-based task automation toward human–agent collaboration and exploring new frontiers
+        of perception in autonomous agents operating in complex, real-world environments through multimodal
+        large language models. As foundation models move from answering queries to executing multi-step
+        workflows, the central research problem becomes making their autonomy reliable, verifiable, and
+        deployable — above all on the temporal, numerical, and multimodal data that real-world decisions
+        depend on, where errors are costly and verification is hard. Stated in one line, my research builds self-improving AI agents that reason reliably over
+        temporal, multimodal, and physical-world data.
+      </p>
+      <p>
+        <span class="runin">Research Vision:</span> Agentic AI is advancing along three directions — greater
+        autonomy, broader real-world perception, and physical-world deployment — and my long-term plan
+        follows all three.
+      </p>
+      <ul>
+        <li>
+          <span class="runin">Greater autonomy.</span> AI systems are shifting from executing narrowly
+          specified tasks to planning their own work, building their own tools, anticipating their own
+          success, and deciding what to work on. Realizing this requires multi-agent systems with explicit
+          planning, verification, and self-assessment.
+        </li>
+        <li>
+          <span class="runin">Broader real-world perception.</span> The data that matters in practice is
+          overwhelmingly temporal, numerical, and multimodal — exactly where foundation models remain
+          brittle. New representations, architectures, and verification mechanisms are needed so that agents
+          can reason over such data and know when their conclusions hold.
+        </li>
+        <li>
+          <span class="runin">Physical-world deployment.</span> The next generation of agents will run on
+          resource-constrained devices, continuously and proactively, embedded in the physical environment
+          rather than confined to a chat session — demanding efficient on-device models, latency-bounded
+          reasoning, and evaluation science for always-on agents.
+        </li>
+      </ul>
+      <p>
+        <span class="runin">In brief:</span> to date I have built foundations for time-series representation
+        and neural architecture search, multi-agent systems that automate the machine-learning lifecycle and
+        anticipate their own performance, and spatiotemporal models for real-world urban data. Going forward,
+        I will build agents that improve through verified tool use, reason from evidence rather than
+        consensus, and deploy safely on resource-constrained devices.
+      </p>
+
+      <h2><span class="num">2.</span>Research Accomplishments</h2>
+      <p>
+        My work joins two traditions that rarely meet: the statistical foundations of time-series data
+        mining and the systems engineering of autonomous agents. During my Ph.D. at KAIST's Data Mining Lab,
+        advised by Prof. Jae-Gil Lee, I developed methods for spatiotemporal data mining and for automating
+        neural-architecture design over time series; as a research scientist at DeepAuto.ai, I extended this
+        foundation to multi-agent LLM systems that automate the AI/ML lifecycle. Few researchers work across both traditions, and that vantage point is what lets me
+        study a central problem in agentic AI: how to build agents that are not merely capable, but reliable
+        on the temporal and multimodal data that real decisions depend on.
+      </p>
+      <p>
+        My contributions span three areas — AI agents for task automation, time-series analysis and
+        multimodal reasoning, and spatiotemporal data mining. I foreground the flagship result of each below;
+        related projects appear as supporting work and in the publication list.
+      </p>
+
+      <h3>2.1 &nbsp; AI Agents for Task Automation</h3>
+      <p>
+        Building machine-learning solutions remains gated behind scarce expertise and fragmented across many
+        manual steps. My first area asks whether LLM agents can own this lifecycle end to end — planning the
+        work, building the tools to do it, anticipating their own success, and deciding which problems to
+        solve.
+      </p>
+      <h4><span class="sn">2.1.1</span>Full-Pipeline AutoML with Multi-Agent LLMs</h4>
+      <p>
+        Existing AutoML systems target a single stage of the pipeline and require expertise to configure. I
+        led the design of <span class="pub">AutoML-Agent</span> [1], a multi-agent LLM framework for the full
+        AutoML pipeline, from data retrieval to deployment-ready models: it uses retrieval-augmented planning
+        to explore competing strategies rather than committing to one, decomposes each into sub-tasks solved
+        in parallel by specialized agents, and applies multi-stage verification to guide code generation.
+        Across seven downstream tasks and fourteen datasets it attains a higher end-to-end success rate than
+        prior single-stage methods, extending my earlier <span class="pub">Conversational AutoML</span> [14],
+        which first framed model construction as a natural-language dialogue.
+      </p>
+      <h4><span class="sn">2.1.2</span>Performance Prediction for Agentic Workflows</h4>
+      <p>
+        Optimizing an agentic system is costly because of the vast space of configurations, prompts, and
+        communication patterns. I developed <span class="pub">Multi-View Encoders</span> [2], a lightweight
+        predictor that encodes a candidate workflow from three complementary views — code architecture,
+        textual prompts, and the agent interaction graph — and, through cross-domain unsupervised
+        pretraining, selects high-performing configurations under scarce labels without expensive
+        trial-and-error (Outstanding Paper, ICML 2025 Workshop on Multi-Agent Systems).
+      </p>
+      <h4><span class="sn">2.1.3</span>Toward Greater Autonomy</h4>
+      <p>
+        Three further projects push agents from executing tasks to owning them.
+        <span class="pub">MONAQ</span> [3] recasts on-device architecture search as multi-objective
+        <em>querying</em> driven by LLM agents over numerical, visual, and textual views of a model,
+        discovering networks that beat both handcrafted and NAS baselines while staying efficient on
+        constrained hardware. <span class="pub">Tooler-Agents</span> (ongoing) builds a persistent,
+        dependency-aware toolset on demand, admitting only tools that compose under sandboxed tests and
+        keeping per-query planning cost independent of toolset size. And <span class="pub">Proactive Problem
+        Solver</span> (ongoing) formalizes <em>ambient proactivity</em> — an always-on system that decides
+        <em>what</em> to investigate under policy-gated autonomy, evaluated by 24-month archival replay with
+        an explicit leakage audit. Together they sketch an agent that plans its work, builds its own tools,
+        predicts its own success, and chooses its own problems.
+      </p>
+
+      <h3>2.2 &nbsp; Time-Series Analysis and Multimodal Reasoning</h3>
+      <p>
+        An agent is only as reliable as its reasoning over real-world data, which is overwhelmingly temporal,
+        numerical, and multimodal. My second area builds the representation, architecture, and reasoning
+        substrate for such data, with the benchmarks and evaluation rigor needed to know when it works.
+      </p>
+      <h4><span class="sn">2.2.1</span>Foundations of Representation and Architecture</h4>
+      <p>
+        To organize a fast-growing field, I led the first survey of universal time-series representation
+        learning [4], whose taxonomy of 127 methods turns on three design elements — the training data, the
+        network architecture, and the learning objective (<em>ACM Computing Surveys</em>, impact factor
+        28.0). I then made the architecture itself a learning problem: <span class="pub">PASTA</span> [6]
+        searches temporal-connectivity spaces for anomaly detection, improving F1 by at least 13.6% over the
+        runner-up; <span class="pub">TFAS</span> [5] is a unified zero-shot NAS whose time-frequency scoring
+        improves five task types by up to 23.6%; and <span class="pub">Time-PEFT</span> [7], with colleagues,
+        uses data-driven complexity to guide parameter-efficient fine-tuning of time-series foundation
+        models, improving forecasting by up to 2.51×.
+      </p>
+      <h4><span class="sn">2.2.2</span>Multimodal Reasoning, and Its Limits</h4>
+      <p>
+        My current focus is multimodal reasoning over time series. <span class="pub">TS-Debate</span> [11]
+        (ongoing) formalizes it as evidence arbitration: modality-specialized agents generate evidence in
+        isolation, and a Verification–Conflict–Calibration protocol resolves their claims by code execution
+        and numerical lookup rather than persuasion or voting, improving accuracy by 25.65% on average over
+        the strongest baseline across twenty tasks. Crucially, the companion <span class="pub">More
+        Modalities, More Problems</span> (ongoing) is a rigorous negative result: naively scaling debate
+        across modalities can cost roughly 22× the tokens and 12× the time of a strong single-agent baseline,
+        with 74% of errors from a shared modality bias that prompts do not remove. Two further projects add
+        theory and evaluation — <span class="pub">Visual Anchoring</span> derives a closed-form Lipschitz
+        bound on how a scenario's influence decays over a forecast horizon and turns it into a chart-anchored
+        prompt, and <span class="pub">MacroLens</span> contributes a leakage-controlled benchmark of 4,416
+        U.S. equities with build-time invariants against lookahead. Publishing the boundaries of a method,
+        not only its wins, is central to how I work.
+      </p>
+
+      <h3>2.3 &nbsp; Spatiotemporal Data Mining</h3>
+      <p>
+        My research is rooted in mining the traces real-world activity leaves behind — heterogeneous,
+        physically-grounded, privacy-sensitive signals at city scale — and this grounding shapes my agenda
+        for agents that act in the physical world. <span class="pub">DF-TAR</span> [9] fuses
+        dangerous-driving telemetry with environmental features for citywide traffic-accident risk
+        prediction, improving baseline accuracy by up to 54%, and <span class="pub">MG-TAR</span> [8] extends
+        it with multi-view graph convolutional networks over heterogeneous urban data; with collaborators,
+        <span class="pub">ZeroPOIRec</span> [10] shows that pretrained LLMs can serve as zero-shot
+        point-of-interest recommenders over individual mobility histories, outperforming state-of-the-art
+        methods while requiring no training on shared visit data.
+      </p>
+
+      <h2><span class="num">3.</span>Future Research</h2>
+      <p>
+        My future research unifies these areas into one program — self-improving agents that reason reliably
+        over real-world data — pursued along three thrusts, the first of which — self-improving systems — is the heart of the agenda, with the
+        other two making its reasoning reliable and its deployment safe. For each I give the defining
+        question, the
+        systems I will build, how I will evaluate success with reliability as a first-class outcome, a
+        near-term deliverable, and why it matters.
+      </p>
+      <h4><span class="sn">3.1</span>Self-Improving Agentic Systems</h4>
+      <p>
+        <span class="runin">Question.</span> Can agents build, verify, and reuse their own tools and
+        workflows so that competence compounds across tasks, instead of restarting each task from scratch?
+        <span class="runin">Approach.</span> Building on AutoML-Agent [1], Tooler-Agents, and Multi-View
+        performance prediction [2], I will develop verified tool synthesis, workflow predictors that estimate
+        utility before paying to run a candidate, and memory that retains and retrieves what works.
+        <span class="runin">Evaluation.</span> End-to-end task success, cost, and reliability under
+        distribution shift, and whether performance compounds over a stream of tasks rather than plateauing.
+        <span class="runin">Near-term.</span> An open-source self-improving AutoML agent and a public
+        benchmark for agentic-workflow performance prediction. <span class="runin">Impact.</span> This turns
+        today's one-shot pipelines into systems that measurably improve with use.
+      </p>
+      <h4><span class="sn">3.2</span>Reasoning Grounded in Verification, Not Persuasion</h4>
+      <p>
+        <span class="runin">Question.</span> My negative result in <em>More Modalities, More Problems</em>
+        shows that multi-agent debate can amplify a shared bias rather than correct it; how do we make agent
+        reasoning settle on evidence instead of consensus? <span class="runin">Approach.</span> I will design
+        reasoning architectures whose conclusions are adjudicated by programmatic verification, with
+        modality-specific uncertainty, calibration, and theory-backed control — extending the
+        Verification–Conflict–Calibration protocol of TS-Debate [11] and the drift bounds of Visual
+        Anchoring. <span class="runin">Evaluation.</span> Beyond accuracy, I will measure calibration and
+        auditability — whether each conclusion is traceable to a verifiable check — and robustness when
+        modalities conflict. <span class="runin">Near-term.</span> An open-source verification-grounded
+        reasoning library and an auditability-and-calibration evaluation suite for multimodal time-series
+        reasoning. <span class="runin">Impact.</span> Reasoning that is auditable rather than merely
+        persuasive is a precondition for deploying agents in high-stakes scientific, financial, and
+        operational decisions.
+      </p>
+      <h4><span class="sn">3.3</span>Proactive, On-Device, Ambient Agency</h4>
+      <p>
+        <span class="runin">Question.</span> How can agents run continuously in the physical world under
+        latency, memory, energy, safety, and privacy constraints? <span class="runin">Approach.</span>
+        Pursuing the <span class="pub">Agent of Things</span> [15] agenda, I will build hardware-aware
+        architecture search that extends MONAQ [3], tiered and latency-bounded reasoning for duty-cycled
+        hardware, open protocols that let heterogeneous agents coordinate across vendors, and reversibility
+        mechanisms that make autonomous action safe to undo. <span class="runin">Evaluation.</span> Safety
+        benchmarks, reversibility guarantees, and scaling laws for on-device inference, developed on the same
+        timeline as the capability science. <span class="runin">Near-term.</span> An on-device agent
+        prototype and a safety-and-reversibility benchmark for always-on physical agents.
+        <span class="runin">Impact.</span> This connects agentic AI to deployment at the scale of the more
+        than eighteen billion connected devices already in the world.
+      </p>
+      <p>
+        Across these thrusts my goal is a single one: agents that earn their autonomy — capable enough to act
+        on the temporal, multimodal, and physical data that real decisions depend on, and rigorous enough to
+        know when they are right.
+      </p>
+
+      <h2>References</h2>
+      <ol class="reflist">
+        <li><b><u>P. Trirat</u></b>, W. Jeong, and S. J. Hwang. "AutoML-Agent: A Multi-Agent LLM Framework for
+          Full-Pipeline AutoML." <em>ICML</em>, 2025.</li>
+        <li><b><u>P. Trirat</u></b>, W. Jeong, and S. J. Hwang. "Multi-View Encoders for Performance Prediction
+          in LLM-Based Agentic Workflows." <em>ICLR</em>, 2026 (Outstanding Paper, ICML 2025 MAS Workshop).</li>
+        <li><b><u>P. Trirat</u></b> and J. Lee. "MONAQ: Multi-Objective Neural Architecture Querying for
+          Time-Series Analysis on Resource-Constrained Devices." <em>Findings of EMNLP</em>, 2025.</li>
+        <li><b><u>P. Trirat</u></b>, Y. Shin, J. Kang, Y. Nam, J. Na, M. Bae, J. Kim, B. Kim, and J. Lee.
+          "Universal Time-Series Representation Learning: A Survey." <em>ACM Computing Surveys</em>, 2026.</li>
+        <li><b><u>P. Trirat</u></b> and J. Lee. "TFAS: Zero-Shot NAS for General Time-Series Analysis with
+          Time-Frequency Aware Scoring." <em>Machine Learning</em>, 2025 (ECML PKDD 2025 Journal Track, Oral).</li>
+        <li><b><u>P. Trirat</u></b> and J. Lee. "PASTA: Neural Architecture Search for Anomaly Detection in
+          Multivariate Time Series." <em>IEEE TETCI</em>, 2024.</li>
+        <li>J. Na, <b><u>P. Trirat</u></b>, C. Park, and J. Lee. "Time-PEFT: Temporal and Multichannel
+          Complexity-Based Fine-Tuning for Time-Series Foundation Models." <em>ICML</em>, 2026.</li>
+        <li><b><u>P. Trirat</u></b>, S. Yoon, and J. Lee. "MG-TAR: Multi-View Graph Convolutional Networks for
+          Traffic Accident Risk Prediction." <em>IEEE T-ITS</em>, 2023.</li>
+        <li><b><u>P. Trirat</u></b> and J. Lee. "DF-TAR: A Deep Fusion Network for Citywide Traffic Accident
+          Risk Prediction with Dangerous Driving Behavior." <em>TheWebConf</em>, 2021 (Oral).</li>
+        <li>J. Kim, Y. Seo, Y. Kim, J. Kang, J. Shin, <b><u>P. Trirat</u></b>, and J. Lee. "Large Language
+          Models are Zero-Shot Point-of-Interest Recommenders." <em>Data Mining and Knowledge Discovery</em>,
+          2025 (ECML PKDD 2025 Journal Track, Oral).</li>
+        <li><b><u>P. Trirat</u></b>, J. M. Kwak, J. Heo, H. Lee, and S. J. Hwang. "TS-Debate: Multimodal
+          Collaborative Debate for Zero-Shot Time-Series Reasoning." Ongoing work, 2026.</li>
+        <li><b><u>P. Trirat</u></b>, Y. Nam, T. Kim, and J. Lee. "AnoViz: A Visual Inspection Tool of Anomalies
+          in Multivariate Time Series." <em>AAAI</em>, 2023 (Demonstration).</li>
+        <li>Y. Nam, <b><u>P. Trirat</u></b>, T. Kim, Y. Lee, and J. Lee. "Context-Aware Deep Time-Series
+          Decomposition for Anomaly Detection in Businesses." <em>ECML PKDD</em>, 2023 (Oral).</li>
+        <li><b><u>P. Trirat</u></b>, Y. Shin, S. Kim, and M. Kim. "Generating a Machine Learning Model with a
+          Few Sentences (Conversational AutoML)." <em>KSC</em>, 2021.</li>
+        <li><b><u>P. Trirat</u></b>. "Position: Agentic IoT is the Next Computing Paradigm (Agent of Things)."
+          Position paper (ongoing work), 2026.</li>
+      </ol>
+    </div>
+
+    <footer class="doc">
+      Patara Trirat &nbsp;·&nbsp; Research Statement &nbsp;·&nbsp; Last updated June 2026
+    </footer>
+  </article>
+</body>
+
+</html>

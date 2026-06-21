@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Research Statement — Patara Trirat</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css"
+    id="theme" />
+
+  <style>
+    :root {
+      --green: #4caf50;
+      --blue: #2196f3;
+      --purple: #673ab7;
+      --pink: #e91e63;
+      --dark: #212121;
+      --ink: #212121;
+    }
+
+    .reveal {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: var(--ink);
+      font-size: 30px;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-transform: none;
+      color: var(--dark);
+    }
+
+    .reveal h1 {
+      font-size: 2.0em;
+    }
+
+    .reveal h2 {
+      font-size: 1.42em;
+      color: var(--dark);
+      border-bottom: 4px solid var(--green);
+      display: inline-block;
+      padding-bottom: 0.12em;
+      margin-bottom: 0.5em;
+    }
+
+    .reveal h3 {
+      font-size: 1.02em;
+    }
+
+    .reveal section {
+      text-align: left;
+    }
+
+    .reveal .center {
+      text-align: center;
+    }
+
+    .reveal a {
+      color: #2e7d32;
+    }
+
+    .reveal strong {
+      color: #2e7d32;
+    }
+
+    .reveal .muted {
+      color: #6b6b6b;
+    }
+
+    .reveal li {
+      margin-bottom: 0.35em;
+      line-height: 1.35;
+    }
+
+    .reveal .small {
+      font-size: 0.72em;
+    }
+
+    .reveal .tiny {
+      font-size: 0.6em;
+      line-height: 1.4;
+    }
+
+    /* dark slides */
+    .reveal section.dark h1,
+    .reveal section.dark h2,
+    .reveal section.dark h3 {
+      color: #fff;
+      border: none;
+    }
+
+    .reveal section.dark {
+      color: #e8e8e8;
+    }
+
+    .reveal section.dark strong {
+      color: var(--green);
+    }
+
+    .reveal section.dark .muted {
+      color: #b9b9b9;
+    }
+
+    /* dark-slide links — lighter green for contrast on #212121 */
+    .reveal section.dark a {
+      color: #80c883;
+    }
+
+    /* title */
+    .title-slide h1 {
+      margin-bottom: 0.15em;
+    }
+
+    .title-slide .role {
+      font-size: 0.78em;
+      color: var(--green);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+    }
+
+    .title-slide .aff {
+      color: #b9b9b9;
+      font-size: 0.8em;
+      margin-top: 0.5em;
+    }
+
+    /* arc banner */
+    .arc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.6em 0;
+    }
+
+    .arc .step {
+      text-align: center;
+      padding: 0.7em 0.9em;
+      font-weight: 700;
+      font-size: 0.78em;
+      border-radius: 8px;
+      margin: 0 6px;
+      color: #fff;
+    }
+
+    .arc .s1 {
+      background: #80c883;
+    }
+
+    .arc .s2 {
+      background: var(--green);
+    }
+
+    .arc .s3 {
+      background: #2e7d32;
+    }
+
+    .arc .ar {
+      font-size: 1.4em;
+      color: var(--green);
+      margin: 0 2px;
+    }
+
+    /* pipeline / flow diagram */
+    .flow {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      margin: 0.7em 0 0.4em;
+    }
+
+    .flow .fbox {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #fafafa;
+      border: 1px solid #e2e2e2;
+      border-top: 4px solid var(--green);
+      border-radius: 8px;
+      padding: 0.7em 0.4em;
+      font-size: 0.56em;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .flow .farr {
+      display: flex;
+      align-items: center;
+      color: var(--green);
+      font-size: 0.95em;
+      font-weight: 800;
+      padding: 0 6px;
+    }
+
+    /* area cards */
+    .pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-top: 0.4em;
+    }
+
+    .card {
+      border: 1px solid #e2e2e2;
+      border-top: 5px solid var(--green);
+      border-radius: 10px;
+      padding: 16px 16px 12px;
+      background: #fafafa;
+    }
+
+    .card.p2 {
+      border-top-color: var(--blue);
+    }
+
+    .card.p3 {
+      border-top-color: var(--purple);
+    }
+
+    .card h3 {
+      margin: 0 0 0.3em;
+      font-size: 0.82em;
+    }
+
+    .card .n {
+      font-size: 0.7em;
+      font-weight: 700;
+      color: #9e9e9e;
+    }
+
+    .card ul {
+      font-size: 0.62em;
+      margin: 0.3em 0 0;
+      padding-left: 1.1em;
+    }
+
+    .card li {
+      margin-bottom: 0.2em;
+    }
+
+    /* venue pill */
+    .pill {
+      display: inline-block;
+      font-size: 0.58em;
+      font-weight: 700;
+      color: #fff;
+      background: var(--green);
+      border-radius: 5px;
+      padding: 1px 8px;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+
+    .pill.ongoing {
+      background: var(--blue);
+    }
+
+    .kbd {
+      font-size: 0.5em;
+      color: #9e9e9e;
+      position: fixed;
+      bottom: 10px;
+      right: 14px;
+    }
+
+    .reveal .pillar-tag {
+      display: inline-block;
+      font-size: 0.5em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 0.5em;
+    }
+
+    .reveal .stat {
+      font-size: 1.5em;
+      font-weight: 800;
+      color: var(--green);
+      line-height: 1.1;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- 1. Title -->
+      <section class="center title-slide dark" data-background-color="#212121">
+        <p class="role">RESEARCH STATEMENT</p>
+        <h1>Patara Trirat</h1>
+        <p class="aff">
+          AI Research Scientist &nbsp;·&nbsp; Ph.D., KAIST School of Computing<br />
+          <span class="small">
+            <a href="mailto:patara.t@kaist.ac.kr">patara.t@kaist.ac.kr</a> &nbsp;·&nbsp;
+            <a href="https://www.linkedin.com/in/itouchz/">LinkedIn</a> &nbsp;·&nbsp;
+            <a href="https://scholar.google.com/citations?user=fDZjV8EAAAAJ">Google Scholar</a>
+          </span>
+        </p>
+        <p class="kbd">→ / Space to advance &nbsp;·&nbsp; Esc for overview</p>
+      </section>
+
+      <!-- 2. Interests & Vision -->
+      <section>
+        <h2>Research Interests &amp; Vision</h2>
+        <p class="small"><strong>I build self-improving AI agents that reason reliably over temporal,
+          multimodal, and physical-world data</strong> — advancing agent-based task automation toward
+          human–agent collaboration, and exploring new frontiers of perception in autonomous agents
+          operating in complex, real-world environments.</p>
+        <div class="arc">
+          <div class="step s1">Automating ML</div>
+          <span class="ar">→</span>
+          <div class="step s2">Autonomous Multimodal Agents</div>
+          <span class="ar">→</span>
+          <div class="step s3">Proactive, On-Device Agency</div>
+        </div>
+        <div class="two-col" style="margin-top:0.2em;">
+          <ul class="small">
+            <li><strong>Greater autonomy</strong> — agents that plan, build their own tools, predict their
+              success, and choose their problems</li>
+            <li><strong>Real-world perception</strong> — reliable reasoning over temporal, numerical &amp;
+              multimodal data</li>
+          </ul>
+          <ul class="small">
+            <li><strong>Physical-world deployment</strong> — efficient, on-device, always-on agents</li>
+            <li><strong>Through-line:</strong> capability and rigorous evaluation advance together —
+              negative results, leakage-controlled benchmarks, theory</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 3. Three areas overview -->
+      <section>
+        <h2>Research Accomplishments — Three Areas</h2>
+        <div class="pillars">
+          <div class="card p1">
+            <div class="n">AREA 1</div>
+            <h3>AI Agents for Task Automation</h3>
+            <ul>
+              <li>AutoML-Agent · Multi-View Encoders</li>
+              <li>MONAQ · Tooler-Agents</li>
+              <li>Proactive Problem Solver</li>
+            </ul>
+          </div>
+          <div class="card p2">
+            <div class="n">AREA 2</div>
+            <h3>Time-Series Analysis &amp; Multimodal Reasoning</h3>
+            <ul>
+              <li>Universal Survey · PASTA · TFAS · Time-PEFT</li>
+              <li>TS-Debate · More Modalities, More Problems</li>
+              <li>Visual Anchoring · MacroLens</li>
+            </ul>
+          </div>
+          <div class="card p3">
+            <div class="n">AREA 3</div>
+            <h3>Spatiotemporal Data Mining</h3>
+            <ul>
+              <li>DF-TAR · MG-TAR</li>
+              <li>ZeroPOIRec</li>
+              <li>→ Agent of Things</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Area 1a: AutoML-Agent (flagship) + pipeline diagram -->
+      <section>
+        <span class="pillar-tag" style="background:var(--green)">Area 1 · AI Agents for Task Automation</span>
+        <h2>AutoML-Agent <span class="pill">ICML 2025</span></h2>
+        <p class="small">A multi-agent LLM framework that owns the <strong>full AutoML pipeline</strong> — from
+          data retrieval to a deployment-ready model — exploring competing plans instead of committing to
+          one.</p>
+        <div class="flow">
+          <div class="fbox">User task<br />&amp; data</div>
+          <div class="farr">→</div>
+          <div class="fbox">Retrieval-augmented planning</div>
+          <div class="farr">→</div>
+          <div class="fbox">Parallel specialized agents</div>
+          <div class="farr">→</div>
+          <div class="fbox">Multi-stage verification</div>
+          <div class="farr">→</div>
+          <div class="fbox">Deployment-ready model</div>
+        </div>
+        <div class="two-col" style="margin-top:0.5em; align-items:center;">
+          <p class="small muted" style="margin:0;">Higher end-to-end success than prior single-stage AutoML —
+            no manual pipeline engineering, across diverse domains.</p>
+          <div class="center"><span class="stat" style="font-size:1.2em;">7 tasks · 14 datasets</span></div>
+        </div>
+      </section>
+
+      <!-- 5. Area 1b: from executing to autonomy -->
+      <section>
+        <span class="pillar-tag" style="background:var(--green)">Area 1 · AI Agents for Task Automation</span>
+        <h2>From Executing → Autonomy</h2>
+        <div class="two-col">
+          <div>
+            <h3>Multi-View Encoders <span class="pill">ICLR 2026</span></h3>
+            <ul class="small">
+              <li>Predict an agentic workflow's success <em>before</em> running it</li>
+              <li>Fuses code, prompt &amp; interaction-graph views; cross-domain pretraining</li>
+            </ul>
+            <h3 style="margin-top:0.5em;">MONAQ <span class="pill">EMNLP 2025</span></h3>
+            <ul class="small">
+              <li>Architecture search recast as LLM-driven multi-objective <em>querying</em> for on-device
+                models</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tooler-Agents <span class="pill ongoing">ongoing</span></h3>
+            <ul class="small">
+              <li>Builds &amp; verifies a persistent, dependency-aware toolset on demand</li>
+            </ul>
+            <h3 style="margin-top:0.5em;">Proactive Problem Solver <span class="pill ongoing">ongoing</span></h3>
+            <ul class="small">
+              <li>Decides <em>what to investigate</em> — ambient proactivity under policy-gated autonomy</li>
+            </ul>
+          </div>
+        </div>
+        <p class="small center" style="margin-top:0.5em; color:#2e7d32; font-weight:700;">An agent that plans
+          its work, builds its tools, predicts its success, and chooses its problems.</p>
+      </section>
+
+      <!-- 6. Area 2: foundations -->
+      <section>
+        <span class="pillar-tag" style="background:var(--blue)">Area 2</span>
+        <h2>Time-Series Foundations &amp; Architecture</h2>
+        <ul class="small">
+          <li><strong>Universal Time-Series Representation Learning</strong>
+            <span class="pill">ACM Computing Surveys</span> — the first survey of the area; 127 methods across
+            data, architecture &amp; learning objective</li>
+          <li><strong>Architecture design as a learning problem:</strong></li>
+        </ul>
+        <div class="pillars" style="grid-template-columns:1fr 1fr 1fr; margin-top:0.3em;">
+          <div class="card p2"><h3>PASTA</h3><p class="tiny muted">NAS for anomaly detection · ≥13.6% F1<br /><span
+                class="pill">IEEE TETCI</span></p></div>
+          <div class="card p2"><h3>TFAS</h3><p class="tiny muted">zero-shot NAS, 5 tasks · up to 23.6%<br /><span
+                class="pill">Mach. Learn.</span></p></div>
+          <div class="card p2"><h3>Time-PEFT</h3><p class="tiny muted">complexity-based PEFT · up to
+              2.51×<br /><span class="pill">ICML 2026</span></p></div>
+        </div>
+      </section>
+
+      <!-- 7. Area 2: reasoning & limits -->
+      <section>
+        <span class="pillar-tag" style="background:var(--blue)">Area 2</span>
+        <h2>Multimodal Reasoning — and Its Limits</h2>
+        <div class="two-col">
+          <div>
+            <h3>TS-Debate <span class="pill ongoing">ongoing work</span></h3>
+            <ul class="small">
+              <li>Reasoning as <strong>multimodal evidence arbitration</strong></li>
+              <li>Verification–Conflict–Calibration: code execution &amp; numerical lookup — <em>not
+                persuasion or voting</em></li>
+            </ul>
+            <div class="stat" style="font-size:1.15em;">+25.65%</div>
+            <p class="tiny muted" style="margin:0;">classification accuracy over the strongest baseline
+              (20 tasks, 3 benchmarks)</p>
+          </div>
+          <div>
+            <h3>Knowing when it <em>doesn't</em> work</h3>
+            <ul class="small">
+              <li><strong>More Modalities, More Problems</strong> <span class="pill ongoing">ongoing</span> —
+                a rigorous <em>negative result</em>: naive debate ≈22× tokens, 12× time; 74% of errors =
+                shared modality bias</li>
+              <li><strong>Visual Anchoring</strong> — closed-form Lipschitz drift bound + chart-anchored
+                prompt (4/5 MLLMs)</li>
+              <li><strong>MacroLens</strong> — 4,416-equity, 7-task leakage-controlled benchmark</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Area 3 -->
+      <section>
+        <span class="pillar-tag" style="background:var(--purple)">Area 3</span>
+        <h2>Spatiotemporal Data Mining → Agent of Things</h2>
+        <div class="two-col">
+          <div>
+            <h3>Spatiotemporal roots</h3>
+            <ul class="small">
+              <li><strong>DF-TAR</strong> <span class="pill">TheWebConf 2021</span> · <strong>MG-TAR</strong>
+                <span class="pill">IEEE T-ITS</span> — citywide traffic-accident risk from driving telemetry</li>
+              <li><strong>ZeroPOIRec</strong> <span class="pill">DMKD 2025</span> — privacy-preserving
+                zero-shot mobility recommendation with LLMs</li>
+            </ul>
+            <p class="tiny muted">How physically-grounded, heterogeneous, privacy-sensitive signals behave at
+              city scale.</p>
+          </div>
+          <div>
+            <h3>Agent of Things <span class="pill ongoing">position paper · ongoing</span></h3>
+            <ul class="small">
+              <li>Embedding proactive agents into <strong>18B+ connected devices</strong> = the next
+                computing paradigm</li>
+              <li>6-level capability ladder; explicit falsification conditions</li>
+              <li><strong>Build the safety &amp; evaluation science on the capability timeline</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Future -->
+      <section>
+        <h2>Future Research</h2>
+        <ul>
+          <li><strong>1 · Self-improving agentic systems</strong> — agents that synthesize, verify, and
+            reuse their own tools and workflows</li>
+          <li><strong>2 · Reasoning grounded in verification, not persuasion</strong> — closing the gap my
+            negative results expose, with theory-backed control</li>
+          <li><strong>3 · Proactive, on-device, ambient agency</strong> — tiered, latency-bounded reasoning
+            and evaluation science for always-on physical agents</li>
+        </ul>
+      </section>
+
+      <!-- 10. Thank you -->
+      <section class="center dark" data-background-color="#212121">
+        <h1 style="color:#fff;">Thank You</h1>
+        <p style="color:var(--green); font-weight:700; font-size:1.1em;">Patara Trirat</p>
+        <p style="color:#b9b9b9;" class="small">
+          <a href="mailto:patara.t@kaist.ac.kr">patara.t@kaist.ac.kr</a> &nbsp;·&nbsp;
+          <a href="https://www.linkedin.com/in/itouchz/">LinkedIn</a> &nbsp;·&nbsp;
+          <a href="https://scholar.google.com/citations?user=fDZjV8EAAAAJ">Google Scholar</a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      transition: 'slide',
+      width: 1280,
+      height: 720,
+      margin: 0.06,
+      plugins: [RevealNotes]
+    });
+  </script>
+</body>
+
+</html>
