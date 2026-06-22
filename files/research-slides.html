@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>Research Statement — Patara Trirat</title>
+  <title>Research Statement · Patara Trirat</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css"
@@ -106,14 +106,23 @@
       color: #b9b9b9;
     }
 
-    /* dark-slide links — lighter green for contrast on #212121 */
+    /* dark-slide links: lighter green for contrast on #212121 */
     .reveal section.dark a {
       color: #80c883;
     }
 
     /* title */
     .title-slide h1 {
-      margin-bottom: 0.15em;
+      font-size: 1.5em;
+      line-height: 1.25;
+      margin: 0.15em 0 0.3em;
+    }
+
+    .title-slide .who {
+      font-size: 1.25em;
+      font-weight: 700;
+      color: var(--green);
+      margin: 0;
     }
 
     .title-slide .role {
@@ -197,6 +206,45 @@
       font-weight: 800;
       padding: 0 6px;
     }
+
+    .reveal .note {
+      font-size: 0.6em;
+      line-height: 1.4;
+      background: #fbfbfb;
+      border-left: 3px solid var(--pink);
+      border-radius: 4px;
+      padding: 0.5em 0.7em;
+      color: #444;
+    }
+
+    /* capability ladder */
+    .ladder {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin: 0.2em 0;
+    }
+
+    .ladder .rung {
+      font-size: 0.56em;
+      font-weight: 700;
+      color: #fff;
+      border-radius: 4px;
+      padding: 4px 10px;
+    }
+
+    .ladder .rung .lv {
+      font-weight: 800;
+      margin-right: 8px;
+      opacity: 0.85;
+    }
+
+    .ladder .r0 { background: #bbdefb; color: #0d3c61; }
+    .ladder .r1 { background: #90caf9; color: #0d3c61; }
+    .ladder .r2 { background: #64b5f6; }
+    .ladder .r3 { background: #42a5f5; }
+    .ladder .r4 { background: #1e88e5; }
+    .ladder .r5 { background: #1565c0; }
 
     /* area cards */
     .pillars {
@@ -303,7 +351,9 @@
       <!-- 1. Title -->
       <section class="center title-slide dark" data-background-color="#212121">
         <p class="role">RESEARCH STATEMENT</p>
-        <h1>Patara Trirat</h1>
+        <h1>Autonomous, Reliable, and Proactive AI Agents<br />
+          for Heterogeneous, Temporal Data</h1>
+        <p class="who">Patara Trirat</p>
         <p class="aff">
           AI Research Scientist &nbsp;·&nbsp; Ph.D., KAIST School of Computing<br />
           <span class="small">
@@ -319,7 +369,7 @@
       <section>
         <h2>Research Interests &amp; Vision</h2>
         <p class="small"><strong>I build self-improving AI agents that reason reliably over temporal,
-          multimodal, and physical-world data</strong> — advancing agent-based task automation toward
+          multimodal, and physical-world data</strong>, advancing agent-based task automation toward
           human–agent collaboration, and exploring new frontiers of perception in autonomous agents
           operating in complex, real-world environments.</p>
         <div class="arc">
@@ -327,18 +377,18 @@
           <span class="ar">→</span>
           <div class="step s2">Autonomous Multimodal Agents</div>
           <span class="ar">→</span>
-          <div class="step s3">Proactive, On-Device Agency</div>
+          <div class="step s3">Proactive Agency</div>
         </div>
         <div class="two-col" style="margin-top:0.2em;">
           <ul class="small">
-            <li><strong>Greater autonomy</strong> — agents that plan, build their own tools, predict their
-              success, and choose their problems</li>
-            <li><strong>Real-world perception</strong> — reliable reasoning over temporal, numerical &amp;
+            <li><strong>Greater autonomy</strong>: agents that plan, build their own tools, predict their
+              success</li>
+            <li><strong>Real-world perception</strong>: reliable reasoning over temporal, numerical &amp;
               multimodal data</li>
           </ul>
           <ul class="small">
-            <li><strong>Physical-world deployment</strong> — efficient, on-device, always-on agents</li>
-            <li><strong>Through-line:</strong> capability and rigorous evaluation advance together —
+            <li><strong>Proactiveness</strong>: agents that surface problems and act on their own initiative</li>
+            <li><strong>Through-line:</strong> capability and rigorous evaluation advance together via
               negative results, leakage-controlled benchmarks, theory</li>
           </ul>
         </div>
@@ -346,7 +396,7 @@
 
       <!-- 3. Three areas overview -->
       <section>
-        <h2>Research Accomplishments — Three Areas</h2>
+        <h2>Research Accomplishments: Three Areas</h2>
         <div class="pillars">
           <div class="card p1">
             <div class="n">AREA 1</div>
@@ -382,8 +432,8 @@
       <section>
         <span class="pillar-tag" style="background:var(--green)">Area 1 · AI Agents for Task Automation</span>
         <h2>AutoML-Agent <span class="pill">ICML 2025</span></h2>
-        <p class="small">A multi-agent LLM framework that owns the <strong>full AutoML pipeline</strong> — from
-          data retrieval to a deployment-ready model — exploring competing plans instead of committing to
+        <p class="small">A multi-agent LLM framework that owns the <strong>full AutoML pipeline</strong>, from
+          data retrieval to a deployment-ready model, exploring competing plans instead of committing to
           one.</p>
         <div class="flow">
           <div class="fbox">User task<br />&amp; data</div>
@@ -397,7 +447,7 @@
           <div class="fbox">Deployment-ready model</div>
         </div>
         <div class="two-col" style="margin-top:0.5em; align-items:center;">
-          <p class="small muted" style="margin:0;">Higher end-to-end success than prior single-stage AutoML —
+          <p class="small muted" style="margin:0;">Higher end-to-end success than prior single-stage AutoML,
             no manual pipeline engineering, across diverse domains.</p>
           <div class="center"><span class="stat" style="font-size:1.2em;">7 tasks · 14 datasets</span></div>
         </div>
@@ -427,7 +477,7 @@
             </ul>
             <h3 style="margin-top:0.5em;">Proactive Problem Solver <span class="pill ongoing">ongoing</span></h3>
             <ul class="small">
-              <li>Decides <em>what to investigate</em> — ambient proactivity under policy-gated autonomy</li>
+              <li>Decides <em>what to investigate</em>: ambient proactivity under policy-gated autonomy</li>
             </ul>
           </div>
         </div>
@@ -441,7 +491,7 @@
         <h2>Time-Series Foundations &amp; Architecture</h2>
         <ul class="small">
           <li><strong>Universal Time-Series Representation Learning</strong>
-            <span class="pill">ACM Computing Surveys</span> — the first survey of the area; 127 methods across
+            <span class="pill">ACM Computing Surveys</span>: the first survey of the area; 127 methods across
             data, architecture &amp; learning objective</li>
           <li><strong>Architecture design as a learning problem:</strong></li>
         </ul>
@@ -458,29 +508,32 @@
       <!-- 7. Area 2: reasoning & limits -->
       <section>
         <span class="pillar-tag" style="background:var(--blue)">Area 2</span>
-        <h2>Multimodal Reasoning — and Its Limits</h2>
-        <div class="two-col">
-          <div>
-            <h3>TS-Debate <span class="pill ongoing">ongoing work</span></h3>
-            <ul class="small">
-              <li>Reasoning as <strong>multimodal evidence arbitration</strong></li>
-              <li>Verification–Conflict–Calibration: code execution &amp; numerical lookup — <em>not
-                persuasion or voting</em></li>
-            </ul>
-            <div class="stat" style="font-size:1.15em;">+25.65%</div>
-            <p class="tiny muted" style="margin:0;">classification accuracy over the strongest baseline
+        <h2>Multimodal Reasoning, and Its Limits</h2>
+        <p class="small"><strong>TS-Debate</strong> <span class="pill ongoing">ongoing</span> recasts
+          time-series reasoning as <strong>multimodal evidence arbitration</strong>, settled by execution
+          rather than persuasion or voting:</p>
+        <div class="flow">
+          <div class="fbox">Modality agents generate evidence</div>
+          <div class="farr">→</div>
+          <div class="fbox"><strong>Verify</strong><br />code execution + numerical lookup</div>
+          <div class="farr">→</div>
+          <div class="fbox"><strong>Conflict</strong><br />reconcile disagreements</div>
+          <div class="farr">→</div>
+          <div class="fbox"><strong>Calibrate</strong><br />confidence</div>
+          <div class="farr">→</div>
+          <div class="fbox">Calibrated answer</div>
+        </div>
+        <div class="two-col" style="margin-top:0.5em; align-items:center;">
+          <div class="center">
+            <span class="stat" style="font-size:1.3em;">+25.65%</span>
+            <p class="tiny muted" style="margin:0.1em 0 0;">accuracy over the strongest baseline
               (20 tasks, 3 benchmarks)</p>
           </div>
-          <div>
-            <h3>Knowing when it <em>doesn't</em> work</h3>
-            <ul class="small">
-              <li><strong>More Modalities, More Problems</strong> <span class="pill ongoing">ongoing</span> —
-                a rigorous <em>negative result</em>: naive debate ≈22× tokens, 12× time; 74% of errors =
-                shared modality bias</li>
-              <li><strong>Visual Anchoring</strong> — closed-form Lipschitz drift bound + chart-anchored
-                prompt (4/5 MLLMs)</li>
-              <li><strong>MacroLens</strong> — 4,416-equity, 7-task leakage-controlled benchmark</li>
-            </ul>
+          <div class="note">
+            <strong>But naive scaling backfires.</strong> <em>More Modalities, More Problems</em>: debate can
+            cost ≈22× the tokens and 12× the time, with 74% of errors from a shared modality bias.
+            <em>Visual Anchoring</em> (closed-form drift bound) and <em>MacroLens</em> (4,416-equity,
+            leakage-controlled benchmark) add the theory and evaluation.
           </div>
         </div>
       </section>
@@ -494,8 +547,8 @@
             <h3>Spatiotemporal roots</h3>
             <ul class="small">
               <li><strong>DF-TAR</strong> <span class="pill">TheWebConf 2021</span> · <strong>MG-TAR</strong>
-                <span class="pill">IEEE T-ITS</span> — citywide traffic-accident risk from driving telemetry</li>
-              <li><strong>ZeroPOIRec</strong> <span class="pill">DMKD 2025</span> — privacy-preserving
+                <span class="pill">IEEE T-ITS</span>: citywide traffic-accident risk from driving telemetry</li>
+              <li><strong>ZeroPOIRec</strong> <span class="pill">DMKD 2025</span>: privacy-preserving
                 zero-shot mobility recommendation with LLMs</li>
             </ul>
             <p class="tiny muted">How physically-grounded, heterogeneous, privacy-sensitive signals behave at
@@ -503,12 +556,17 @@
           </div>
           <div>
             <h3>Agent of Things <span class="pill ongoing">position paper · ongoing</span></h3>
-            <ul class="small">
-              <li>Embedding proactive agents into <strong>18B+ connected devices</strong> = the next
-                computing paradigm</li>
-              <li>6-level capability ladder; explicit falsification conditions</li>
-              <li><strong>Build the safety &amp; evaluation science on the capability timeline</strong></li>
-            </ul>
+            <p class="tiny muted" style="margin:0 0 0.3em;">Proactive agents embedded across everyday connected devices, charted as a six-level capability ladder:</p>
+            <div class="ladder">
+              <div class="rung r5"><span class="lv">L5</span>Autonomous Swarm</div>
+              <div class="rung r4"><span class="lv">L4</span>Cross-Vendor Mesh</div>
+              <div class="rung r3"><span class="lv">L3</span>Multi-Agent Domain</div>
+              <div class="rung r2"><span class="lv">L2</span>Ambient Agent</div>
+              <div class="rung r1"><span class="lv">L1</span>Reactive AIoT</div>
+              <div class="rung r0"><span class="lv">L0</span>Classical IoT</div>
+            </div>
+            <p class="tiny muted" style="margin:0.35em 0 0;">Today sits at L0–L1; the open agenda is the
+              science for L2–L4.</p>
           </div>
         </div>
       </section>
@@ -516,14 +574,33 @@
       <!-- 9. Future -->
       <section>
         <h2>Future Research</h2>
-        <ul>
-          <li><strong>1 · Self-improving agentic systems</strong> — agents that synthesize, verify, and
-            reuse their own tools and workflows</li>
-          <li><strong>2 · Reasoning grounded in verification, not persuasion</strong> — closing the gap my
-            negative results expose, with theory-backed control</li>
-          <li><strong>3 · Proactive, on-device, ambient agency</strong> — tiered, latency-bounded reasoning
-            and evaluation science for always-on physical agents</li>
-        </ul>
+        <p class="small">One program, pursued along three directions, one per pillar.</p>
+        <div class="pillars">
+          <div class="card p1">
+            <div class="n">DIRECTION 1 · AUTONOMY</div>
+            <h3>Self-Improving Agentic Systems</h3>
+            <p class="tiny muted">Agents that synthesize, verify, and reuse their own tools and workflows, so
+              competence compounds across tasks.</p>
+            <p class="tiny"><strong>Near-term:</strong> open-source self-improving AutoML agent, plus a
+              workflow-prediction benchmark.</p>
+          </div>
+          <div class="card p2">
+            <div class="n">DIRECTION 2 · RELIABILITY</div>
+            <h3>Verification, Not Persuasion</h3>
+            <p class="tiny muted">Reasoning adjudicated by programmatic verification, calibration, and
+              theory-backed control.</p>
+            <p class="tiny"><strong>Near-term:</strong> verification-grounded reasoning library, plus an
+              auditability &amp; calibration suite.</p>
+          </div>
+          <div class="card p3">
+            <div class="n">DIRECTION 3 · PROACTIVENESS</div>
+            <h3>Proactive, Ambient Agency</h3>
+            <p class="tiny muted">Always-on agents that decide what to investigate and act on their own
+              initiative under human-set policies.</p>
+            <p class="tiny"><strong>Near-term:</strong> an ambient multi-agent system, evaluated by archival
+              replay.</p>
+          </div>
+        </div>
       </section>
 
       <!-- 10. Thank you -->

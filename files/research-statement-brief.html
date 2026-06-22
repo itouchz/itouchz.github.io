@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research Statement (Abridged) — Patara Trirat</title>
+  <title>Research Statement (Abridged) · Patara Trirat</title>
   <meta name="author" content="Patara Trirat" />
   <meta name="description"
-    content="Abridged research statement of Patara Trirat — agent-based task automation, autonomous agents, and multimodal reasoning over real-world temporal data." />
+    content="Abridged research statement of Patara Trirat: agent-based task automation, autonomous agents, and multimodal reasoning over real-world temporal data." />
   <style>
     :root {
       --green: #4caf50;
@@ -247,16 +247,15 @@
         of perception in autonomous agents operating in complex, real-world environments through multimodal
         large language models. As foundation models move from answering queries to executing multi-step
         workflows, the central research problem becomes making their autonomy reliable, verifiable, and
-        deployable — above all on the temporal, numerical, and multimodal data that real-world decisions
+        deployable, above all on the temporal, numerical, and multimodal data that real-world decisions
         depend on. Stated in one line, my research builds self-improving AI agents that reason reliably over
         temporal, multimodal, and physical-world data.
       </p>
       <p>
-        <span class="runin">Research Vision:</span> I believe agentic AI will evolve along three directions —
-        greater autonomy (agents that plan their work, build their own tools, predict their own success, and
-        choose their own problems), broader real-world perception (reliable reasoning over temporal,
-        numerical, and multimodal data), and physical-world deployment (efficient, on-device, always-on
-        agents embedded in the environment). My research follows these three directions.
+        <span class="runin">Research Vision:</span> I believe agentic AI will evolve along three directions:
+        greater autonomy (agents that plan their work, build their own tools, and predict their own success), broader real-world perception (reliable reasoning over temporal,
+        numerical, and multimodal data), and proactiveness (always-on agents that surface problems and act on their
+        own initiative under human-set policies). My research follows these three directions.
       </p>
 
       <h2><span class="num">2.</span>Research Accomplishments</h2>
@@ -269,8 +268,8 @@
       <h3>2.1 &nbsp; AI Agents for Task Automation</h3>
       <p>
         I ask whether LLM agents can own the ML lifecycle end to end. <span class="pub">AutoML-Agent</span>
-        (ICML 2025) is a multi-agent framework for the full AutoML pipeline — retrieval-augmented planning,
-        parallel specialized agents, and multi-stage verification — with a higher end-to-end success rate
+        (ICML 2025) is a multi-agent framework for the full AutoML pipeline (retrieval-augmented planning,
+        parallel specialized agents, and multi-stage verification) with a higher end-to-end success rate
         than single-stage methods across seven tasks and fourteen datasets. Toward autonomy,
         <span class="pub">Multi-View Encoders</span> (ICLR 2026; Outstanding Paper, ICML 2025 MAS Workshop)
         predict an agentic workflow's success from code, prompt, and interaction-graph views before running
@@ -284,14 +283,14 @@
       <h3>2.2 &nbsp; Time-Series Analysis and Multimodal Reasoning</h3>
       <p>
         An agent is only as reliable as its reasoning over real-world data. I built representational and
-        architectural foundations — the first survey of universal time-series representation learning
+        architectural foundations: the first survey of universal time-series representation learning
         (<em>ACM Computing Surveys</em>; 127 methods across data, architecture, and learning objective) and
         architecture-as-learning (<span class="pub">PASTA</span>, IEEE TETCI; <span class="pub">TFAS</span>,
         Machine Learning; <span class="pub">Time-PEFT</span>, ICML 2026). I now study multimodal reasoning
         over time series: <span class="pub">TS-Debate</span> (ongoing) resolves modality-specialized evidence
         by programmatic verification rather than persuasion (+25.65% over the strongest baseline across
         twenty tasks), while the companion <span class="pub">More Modalities, More Problems</span> (ongoing)
-        reports a rigorous <em>negative result</em> — naive multimodal debate can cost ≈22× the tokens and
+        reports a rigorous <em>negative result</em>: naive multimodal debate can cost ≈22× the tokens and
         12× the time of a strong baseline, with 74% of errors from shared modality bias.
         <span class="pub">Visual Anchoring</span> and <span class="pub">MacroLens</span> (ongoing) add a
         closed-form drift bound and a leakage-controlled benchmark of 4,416 equities and seven tasks for
@@ -300,9 +299,9 @@
 
       <h3>2.3 &nbsp; Spatiotemporal Data Mining</h3>
       <p>
-        My roots are in mining real-world spatiotemporal traces — citywide traffic-accident risk
+        My roots are in mining real-world spatiotemporal traces: citywide traffic-accident risk
         (<span class="pub">DF-TAR</span>, TheWebConf 2021; <span class="pub">MG-TAR</span>, IEEE T-ITS) and
-        privacy-preserving mobility recommendation (<span class="pub">ZeroPOIRec</span>, DMKD 2025) — which
+        privacy-preserving mobility recommendation (<span class="pub">ZeroPOIRec</span>, DMKD 2025), which
         taught me how heterogeneous, physically-grounded, privacy-sensitive signals behave at city scale,
         grounding my forward agenda for agents that act in the physical world.
       </p>
@@ -312,10 +311,9 @@
         My agenda unifies these areas into agents that are autonomous, reliable, and proactive:
         (1) <span class="runin">self-improving agentic systems</span> that synthesize, verify, and reuse their
         own tools and workflows; (2) <span class="runin">reasoning grounded in verification, not
-        persuasion</span>, closing the gap my negative results expose; and (3) <span class="runin">proactive,
-        on-device, ambient agency</span> — pursuing the <span class="pub">Agent of Things</span> agenda with
-        tiered, latency-bounded reasoning and evaluation science for always-on physical agents built on the
-        same timeline as the capability science.
+        persuasion</span>, closing the gap my negative results expose; and (3) <span class="runin">proactive, ambient agency</span>, deciding what to
+        investigate and acting on their own initiative (<span class="pub">Proactive Problem Solver</span>),
+        extending toward the proactive agency of the <span class="pub">Agent of Things</span> position paper.
       </p>
     </div>
 
