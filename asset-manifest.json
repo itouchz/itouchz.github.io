@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f2c94e6e.css",
-    "main.js": "/static/js/main.a780eded.js",
+    "main.js": "/static/js/main.edc7e0c7.js",
     "static/js/133.87d4f3b8.chunk.js": "/static/js/133.87d4f3b8.chunk.js",
     "static/js/176.d042c205.chunk.js": "/static/js/176.d042c205.chunk.js",
     "static/js/18.009e5486.chunk.js": "/static/js/18.009e5486.chunk.js",
@@ -54,7 +54,7 @@
     "static/media/Newkru Logo.png": "/static/media/Newkru Logo.4196ec1abc2f5f60c89b.png",
     "index.html": "/index.html",
     "main.f2c94e6e.css.map": "/static/css/main.f2c94e6e.css.map",
-    "main.a780eded.js.map": "/static/js/main.a780eded.js.map",
+    "main.edc7e0c7.js.map": "/static/js/main.edc7e0c7.js.map",
     "133.87d4f3b8.chunk.js.map": "/static/js/133.87d4f3b8.chunk.js.map",
     "176.d042c205.chunk.js.map": "/static/js/176.d042c205.chunk.js.map",
     "18.009e5486.chunk.js.map": "/static/js/18.009e5486.chunk.js.map",
@@ -69,6 +69,6 @@
   },
   "entrypoints": [
     "static/css/main.f2c94e6e.css",
-    "static/js/main.a780eded.js"
+    "static/js/main.edc7e0c7.js"
   ]
 }
