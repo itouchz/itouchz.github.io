@@ -380,7 +380,7 @@
       <p>
         Three further projects push agents from executing tasks to owning them.
         <span class="pub">MONAQ</span> [3] recasts on-device architecture search as multi-objective
-        <em>querying</em> driven by LLM agents over numerical, visual, and textual views of a model,
+        <em>querying</em> driven by LLM agents over numerical, visual, and textual views of the data,
         discovering networks that beat both handcrafted and NAS baselines while staying efficient on
         constrained hardware. <span class="pub">Agentic Tool Generation with Hierarchical Goal-Driven
         Co-Planning</span> [20] (ongoing) builds a persistent, dependency-aware toolset on demand, admitting
@@ -416,8 +416,8 @@
         My current focus is multimodal reasoning over time series. <span class="pub">TS-Debate</span> [11]
         (EMNLP 2026) formalizes it as evidence arbitration: modality-specialized agents generate evidence in
         isolation, and a Verification–Conflict–Calibration protocol resolves their claims by code execution
-        and numerical lookup rather than persuasion or voting, improving accuracy by 25.65% on average over
-        the strongest baseline across twenty tasks. Crucially, the companion <span class="pub">More
+        and numerical lookup rather than persuasion or voting. Evaluated on twenty tasks, it improves
+        classification accuracy by 25.65% on average over the strongest baseline. Crucially, the companion <span class="pub">More
         Modalities, More Problems</span> [13] (AACL-IJCNLP 2026) is a rigorous negative result: naively
         scaling debate across modalities can cost roughly 22× the tokens and 12× the time of a strong
         single-agent baseline, with 74% of errors from a shared modality bias that prompts do not remove. Two
