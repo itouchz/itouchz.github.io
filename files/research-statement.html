@@ -7,7 +7,7 @@
   <title>Research Statement · Patara Trirat</title>
   <meta name="author" content="Patara Trirat" />
   <meta name="description"
-    content="Research statement of Patara Trirat: agent-based task automation, autonomous agents, and multimodal reasoning over real-world temporal data." />
+    content="Research statement of Patara Trirat: AI agents with greater autonomy, broader real-world perception and better representations, and proactiveness over real-world temporal and multimodal data." />
   <style>
     :root {
       --green: #4caf50;
@@ -132,7 +132,8 @@
       margin: 0 0 4px;
       padding-left: 1.3rem;
       text-indent: -1.3rem;
-      text-align: left;
+      text-align: justify;
+      hyphens: auto;
     }
 
     ul {
@@ -142,6 +143,8 @@
 
     li {
       margin-bottom: 6px;
+      text-align: justify;
+      hyphens: auto;
     }
 
     a {
@@ -283,17 +286,19 @@
       <h2><span class="num">1.</span>Research Interests and Vision</h2>
       <p class="lead">
         <span class="runin">Research Interests:</span> As an AI research scientist, I am passionate about
-        advancing agent-based task automation toward human–agent collaboration and exploring new frontiers
-        of perception in autonomous agents operating in complex, real-world environments through multimodal
-        large language models. As foundation models move from answering queries to executing multi-step
-        workflows, the central research problem becomes making their autonomy reliable, verifiable, and
-        deployable, above all on the temporal, numerical, and multimodal data that real-world decisions
-        depend on, where errors are costly and verification is hard. Stated in one line, my research builds self-improving AI agents that reason reliably over
-        temporal, multimodal, and physical-world data.
+        advancing agentic task automation toward more effective human–agent collaboration. I also explore how
+        multimodal large language models (LLMs) can enhance perception and representation learning for
+        autonomous agents operating in complex, real-world environments. As foundation models move from
+        answering queries to executing multi-step workflows, the central research problem becomes making their
+        autonomy reliable, verifiable, and deployable, above all on the temporal, numerical, and multimodal
+        data that real-world decisions depend on, where errors are costly and verification is hard. Stated in
+        one line, my research builds self-improving AI agents that perceive, represent, and reason reliably
+        over temporal, multimodal, and physical-world data.
       </p>
       <p>
         <span class="runin">Research Vision:</span> Agentic AI is advancing along three directions: greater
-        autonomy, broader real-world perception, and proactiveness. My long-term plan follows all three.
+        autonomy, broader real-world perception and better representations, and proactiveness. My long-term
+        plan follows all three.
       </p>
       <ul>
         <li>
@@ -303,10 +308,11 @@
           self-assessment.
         </li>
         <li>
-          <span class="runin">Broader real-world perception.</span> The data that matters in practice is
-          overwhelmingly temporal, numerical, and multimodal, exactly where foundation models remain
-          brittle. New representations, architectures, and verification mechanisms are needed so that agents
-          can reason over such data and know when their conclusions hold.
+          <span class="runin">Broader real-world perception and better representations.</span> The data that
+          matters in practice is overwhelmingly temporal, numerical, and multimodal, exactly where foundation
+          models remain brittle. Agents must perceive more of it, across modalities and scales, and represent
+          it faithfully. This calls for new representations, architectures, and verification mechanisms so that
+          agents can reason over such data and know when their conclusions hold.
         </li>
         <li>
           <span class="runin">Proactiveness.</span> Agents should not only respond when invoked but take the
@@ -318,8 +324,9 @@
         <span class="runin">In brief:</span> to date I have built foundations for time-series representation
         and neural architecture search, multi-agent systems that automate the machine-learning lifecycle and
         anticipate their own performance, and spatiotemporal models for real-world urban data. Going forward,
-        I will build agents that improve through verified tool use, reason from evidence rather than
-        consensus, and act on their own initiative rather than only on request.
+        I will build agents that improve through verified tool use, perceive and represent real-world data
+        faithfully while reasoning from evidence rather than consensus, and act on their own initiative rather
+        than only on request.
       </p>
 
       <h2><span class="num">2.</span>Research Accomplishments</h2>
@@ -327,7 +334,8 @@
         My work joins two traditions that rarely meet: the statistical foundations of time-series data
         mining and the systems engineering of autonomous agents. During my Ph.D. at KAIST's Data Mining Lab,
         advised by Prof. Jae-Gil Lee, I developed methods for spatiotemporal data mining and for automating
-        neural-architecture design over time series. As a research scientist at DeepAuto.ai, I extended this
+        neural-architecture design over time series. As a Senior and now Principal AI Research Scientist at
+        DeepAuto.ai, I extended this
         foundation to multi-agent LLM systems that automate the AI/ML lifecycle. Few researchers work across
         both traditions, and that vantage point is what lets me study a central problem in agentic AI: how to
         build agents that are not merely capable, but reliable on the temporal and multimodal data that real
@@ -335,8 +343,10 @@
       </p>
       <p>
         My contributions span three areas: AI agents for task automation, time-series analysis and
-        multimodal reasoning, and spatiotemporal data mining. I foreground the flagship result of each below.
-        Related projects appear as supporting work and in the publication list.
+        multimodal reasoning, and spatiotemporal data mining. The first advances greater autonomy and lays the
+        groundwork for proactiveness. The second and third supply the perception and representations that the
+        second direction calls for. I foreground the flagship result of each below. Related projects appear as
+        supporting work and in the publication list.
       </p>
 
       <h3>2.1 &nbsp; AI Agents for Task Automation</h3>
@@ -354,13 +364,13 @@
         to explore competing strategies rather than committing to one, decomposes each into sub-tasks solved
         in parallel by specialized agents, and applies multi-stage verification to guide code generation.
         Across seven downstream tasks and fourteen datasets it attains a higher end-to-end success rate than
-        prior single-stage methods, extending my earlier <span class="pub">Conversational AutoML</span> [14],
+        prior single-stage methods, extending my earlier <span class="pub">Conversational AutoML</span> [16],
         which first framed model construction as a natural-language dialogue.
       </p>
       <h4><span class="sn">2.1.2</span>Performance Prediction for Agentic Workflows</h4>
       <p>
         Optimizing an agentic system is costly because of the vast space of configurations, prompts, and
-        communication patterns. I developed <span class="pub">Multi-View Encoders</span> [2], a lightweight
+        communication patterns. I developed <span class="pub">Multi-View Encoders</span> (Agentic Predictor) [2], a lightweight
         predictor that encodes a candidate workflow from three complementary views (code architecture,
         textual prompts, and the agent interaction graph) and, through cross-domain unsupervised
         pretraining, selects high-performing configurations under scarce labels without expensive
@@ -372,20 +382,22 @@
         <span class="pub">MONAQ</span> [3] recasts on-device architecture search as multi-objective
         <em>querying</em> driven by LLM agents over numerical, visual, and textual views of a model,
         discovering networks that beat both handcrafted and NAS baselines while staying efficient on
-        constrained hardware. <span class="pub">Tooler-Agents</span> (ongoing) builds a persistent,
-        dependency-aware toolset on demand, admitting only tools that compose under sandboxed tests and
-        keeping per-query planning cost independent of toolset size. And <span class="pub">Proactive Problem
-        Solver</span> (ongoing) formalizes <em>ambient proactivity</em>: an always-on system that decides
-        <em>what</em> to investigate under policy-gated autonomy, evaluated by 24-month archival replay with
-        an explicit leakage audit. Together they sketch an agent that plans its work, builds its own tools,
+        constrained hardware. <span class="pub">Agentic Tool Generation with Hierarchical Goal-Driven
+        Co-Planning</span> [20] (ongoing) builds a persistent, dependency-aware toolset on demand, admitting
+        only tools that compose under sandboxed tests and keeping per-query planning cost independent of
+        toolset size. And, toward the third direction, <span class="pub">Proactive Problem Solver</span> [21]
+        (ongoing) formalizes <em>ambient proactivity</em> for the enterprise R&amp;D pipeline: an always-on
+        system that decides <em>what</em> to investigate under policy-gated autonomy, evaluated by 24-month
+        archival replay with an explicit leakage audit. Together they sketch an agent that plans its work, builds its own tools,
         predicts its own success, and chooses its own problems.
       </p>
 
       <h3>2.2 &nbsp; Time-Series Analysis and Multimodal Reasoning</h3>
       <p>
-        An agent is only as reliable as its reasoning over real-world data, which is overwhelmingly temporal,
-        numerical, and multimodal. My second area builds the representation, architecture, and reasoning
-        substrate for such data, with the benchmarks and evaluation rigor needed to know when it works.
+        An agent is only as reliable as its perception of real-world data, which is overwhelmingly temporal,
+        numerical, and multimodal. My second area, the basis of the second direction, builds the
+        representation, architecture, and reasoning substrate for such data, with the benchmarks and
+        evaluation rigor needed to know when it works.
       </p>
       <h4><span class="sn">2.2.1</span>Foundations of Representation and Architecture</h4>
       <p>
@@ -406,21 +418,23 @@
         isolation, and a Verification–Conflict–Calibration protocol resolves their claims by code execution
         and numerical lookup rather than persuasion or voting, improving accuracy by 25.65% on average over
         the strongest baseline across twenty tasks. Crucially, the companion <span class="pub">More
-        Modalities, More Problems</span> (ongoing) is a rigorous negative result: naively scaling debate
-        across modalities can cost roughly 22× the tokens and 12× the time of a strong single-agent baseline,
-        with 74% of errors from a shared modality bias that prompts do not remove. Two further projects add
-        theory and evaluation: <span class="pub">Visual Anchoring</span> derives a closed-form Lipschitz
-        bound on how a scenario's influence decays over a forecast horizon and turns it into a chart-anchored
-        prompt, and <span class="pub">MacroLens</span> [16] contributes a leakage-controlled benchmark of 4,416
-        U.S. equities with build-time invariants against lookahead. Publishing the boundaries of a method,
-        not only its wins, is central to how I work.
+        Modalities, More Problems</span> [13] (AACL-IJCNLP 2026) is a rigorous negative result: naively
+        scaling debate across modalities can cost roughly 22× the tokens and 12× the time of a strong
+        single-agent baseline, with 74% of errors from a shared modality bias that prompts do not remove. Two
+        further projects add theory and evaluation: <span class="pub">Visual Anchoring</span> [12] (NeurIPS
+        2026) derives a closed-form Lipschitz bound on how a scenario's influence decays over a forecast
+        horizon and turns it into a chart-anchored prompt, and <span class="pub">MacroLens</span> [17]
+        contributes a leakage-controlled benchmark of 4,416 U.S. equities with build-time invariants against
+        lookahead. In forecasting practice, I also placed 2nd in the XForecast Challenge at KDD 2026 Finance
+        Day, hosted by LG AI Research. Publishing the boundaries of a method, not only its wins, is central to
+        how I work.
       </p>
 
       <h3>2.3 &nbsp; Spatiotemporal Data Mining</h3>
       <p>
         My research is rooted in mining the traces real-world activity leaves behind (heterogeneous,
         physically-grounded, privacy-sensitive signals at city scale), and this grounding shapes my agenda
-        for agents that act in the physical world. <span class="pub">DF-TAR</span> [9] fuses
+        for agents that perceive and act in the physical world. <span class="pub">DF-TAR</span> [9] fuses
         dangerous-driving telemetry with environmental features for citywide traffic-accident risk
         prediction, improving baseline accuracy by up to 54%, and <span class="pub">MG-TAR</span> [8] extends
         it with multi-view graph convolutional networks over heterogeneous urban data. With collaborators,
@@ -431,21 +445,22 @@
 
       <h2><span class="num">3.</span>Future Research</h2>
       <p>
-        My future research unifies these areas into one program, self-improving agents that reason reliably
-        over real-world data, pursued along three directions. The first, self-improving systems, is the heart
-        of the agenda. The other two make its reasoning reliable and its initiative proactive. For each I
-        give the defining question, the systems I will build, how I will evaluate success with reliability as
-        a first-class outcome, a near-term deliverable, and why it matters.
+        My future research unifies these areas into one program, self-improving agents that perceive and
+        reason reliably over real-world data, pursued along the three directions above. The first, greater
+        autonomy through self-improving systems, is the heart of the agenda. The second broadens what these
+        agents can perceive and how well they represent it, and the third makes their initiative proactive.
+        For each I give the defining question, the systems I will build, how I will evaluate success with
+        reliability as a first-class outcome, a near-term deliverable, and why it matters.
       </p>
-      <h4><span class="sn">3.1</span>Self-Improving Agentic Systems</h4>
+      <h4><span class="sn">3.1</span>Greater Autonomy: Self-Improving Agentic Systems</h4>
       <p class="fr"><span class="runin">Question.</span> Can agents build, verify, and reuse their own tools
         and workflows so that competence compounds across tasks, instead of restarting each task from
         scratch?</p>
-      <p class="fr"><span class="runin">Approach.</span> Building on AutoML-Agent [1], Tooler-Agents, and
-        Multi-View performance prediction [2], I will develop verified tool synthesis, workflow predictors
-        that estimate utility before paying to run a candidate, and memory that retains and retrieves what
-        works, extending the unified retrieval over heterogeneous sources I contributed to in
-        OmniRetrieval [17].</p>
+      <p class="fr"><span class="runin">Approach.</span> Building on AutoML-Agent [1], Agentic Tool
+        Generation [20], and Multi-View performance prediction [2], I will develop verified tool synthesis,
+        workflow predictors that estimate utility before paying to run a candidate, and memory that retains
+        and retrieves what works, extending the unified retrieval over heterogeneous sources I contributed to
+        in OmniRetrieval [18].</p>
       <p class="fr"><span class="runin">Evaluation.</span> End-to-end task success, cost, and reliability
         under distribution shift, and whether performance compounds over a stream of tasks rather than
         plateauing.</p>
@@ -453,29 +468,37 @@
         public benchmark for agentic-workflow performance prediction.</p>
       <p class="fr"><span class="runin">Impact.</span> This turns today's one-shot pipelines into systems that
         measurably improve with use.</p>
-      <h4><span class="sn">3.2</span>Reasoning Grounded in Verification, Not Persuasion</h4>
-      <p class="fr"><span class="runin">Question.</span> My negative result in <em>More Modalities, More
-        Problems</em> shows that multi-agent debate can amplify a shared bias rather than correct it. How do
-        we make agent reasoning settle on evidence instead of consensus?</p>
-      <p class="fr"><span class="runin">Approach.</span> I will design reasoning architectures whose
-        conclusions are adjudicated by programmatic verification, with modality-specific uncertainty,
-        calibration, and theory-backed control, extending the Verification–Conflict–Calibration protocol of
-        TS-Debate [11] and the drift bounds of Visual Anchoring.</p>
-      <p class="fr"><span class="runin">Evaluation.</span> Beyond accuracy, I will measure calibration and
-        auditability (whether each conclusion is traceable to a verifiable check) and robustness when
-        modalities conflict.</p>
-      <p class="fr"><span class="runin">Near-term.</span> An open-source verification-grounded reasoning
-        library and an auditability-and-calibration evaluation suite for multimodal time-series reasoning.</p>
-      <p class="fr"><span class="runin">Impact.</span> Reasoning that is auditable rather than merely
-        persuasive is a precondition for deploying agents in high-stakes scientific, financial, and
-        operational decisions.</p>
-      <h4><span class="sn">3.3</span>Proactive, Ambient Agency</h4>
+      <h4><span class="sn">3.2</span>Broader Real-World Perception and Better Representations</h4>
+      <p class="fr"><span class="runin">Question.</span> Real-world decisions rest on temporal, numerical,
+        visual, and textual signals that foundation models still perceive poorly, and my negative result in
+        <em>More Modalities, More Problems</em> [13] shows that simply adding modalities can amplify a shared
+        bias rather than correct it. How can agents perceive more of the world, represent it faithfully, and
+        know when their conclusions hold?</p>
+      <p class="fr"><span class="runin">Approach.</span> Building on universal time-series representation
+        learning [4], complexity-based fine-tuning of time-series foundation models [7], and the
+        chart-anchored, scenario-guided forecasting of Visual Anchoring [12], I will develop representations
+        that align numerical series with visual and textual context, and fusion that weighs each modality by
+        its measured reliability instead of trusting every added input. Conclusions will be adjudicated by
+        programmatic verification, with modality-specific uncertainty, calibration, and theory-backed control,
+        extending the Verification–Conflict–Calibration protocol of TS-Debate [11].</p>
+      <p class="fr"><span class="runin">Evaluation.</span> Beyond accuracy, I will measure calibration,
+        auditability (whether each conclusion is traceable to a verifiable check), robustness when modalities
+        conflict or go missing, and transfer of representations across domains, on leakage-controlled
+        benchmarks such as MacroLens [17].</p>
+      <p class="fr"><span class="runin">Near-term.</span> Open-source multimodal time-series representations
+        paired with a verification-grounded reasoning library, and an auditability-and-calibration evaluation
+        suite for multimodal time-series reasoning.</p>
+      <p class="fr"><span class="runin">Impact.</span> Agents that perceive the data they act on faithfully,
+        and whose reasoning is auditable rather than merely persuasive, are a precondition for deployment in
+        high-stakes scientific, financial, and operational decisions.</p>
+      <h4><span class="sn">3.3</span>Proactiveness: Always-On, Ambient Agency</h4>
       <p class="fr"><span class="runin">Question.</span> How can agents take the initiative, deciding what is
         worth investigating and surfacing problems on their own, instead of waiting to be invoked?</p>
       <p class="fr"><span class="runin">Approach.</span> Building on <span class="pub">Proactive Problem
-        Solver</span>, I will develop always-on, ambient agents that read context, surface research-worthy
-        problems, and carry them through investigation under policy-gated autonomy, extending toward the
-        proactive agency envisioned in the <span class="pub">Agent of Things</span> [15] position paper.</p>
+        Solver</span> [21], I will develop always-on, ambient agents that read context, surface
+        research-worthy problems, and carry them through investigation under policy-gated autonomy, extending
+        toward the proactive agency envisioned in the <span class="pub">Agent of Things</span> [19] position
+        paper.</p>
       <p class="fr"><span class="runin">Evaluation.</span> Whether proactive surfacing finds genuinely useful
         problems (precision and recall against archival ground truth, with explicit leakage audits) and
         whether the cost of always-on attention is justified.</p>
@@ -483,9 +506,10 @@
         by multi-year archival replay.</p>
       <p class="fr"><span class="runin">Impact.</span> Agents that take initiative under human-set policies, finding the problems worth solving, not only solving the ones handed to them.</p>
       <p>
-        Across these directions my goal is a single one: agents that earn their autonomy, capable enough to act
-        on the temporal, multimodal, and physical-world data that real decisions depend on, rigorous enough
-        to know when they are right, and proactive enough to find the problems worth solving.
+        Across these directions my goal is a single one: agents that earn their autonomy, capable enough to
+        plan their work, build their tools, and improve with use; perceptive enough to represent the temporal,
+        multimodal, and physical-world data that real decisions depend on, and to know when they are right;
+        and proactive enough to find the problems worth solving.
       </p>
 
       <h2>References</h2>
@@ -493,7 +517,8 @@
         <li><b><u>P. Trirat</u></b>, W. Jeong, and S. J. Hwang. "AutoML-Agent: A Multi-Agent LLM Framework for
           Full-Pipeline AutoML." <em>ICML</em>, 2025.</li>
         <li><b><u>P. Trirat</u></b>, W. Jeong, and S. J. Hwang. "Multi-View Encoders for Performance Prediction
-          in LLM-Based Agentic Workflows." <em>ICLR</em>, 2026 (Outstanding Paper, ICML 2025 MAS Workshop).</li>
+          in LLM-Based Agentic Workflows (Agentic Predictor)." <em>ICLR</em>, 2026 (Outstanding Paper, ICML 2025
+          MAS Workshop).</li>
         <li><b><u>P. Trirat</u></b> and J. Lee. "MONAQ: Multi-Objective Neural Architecture Querying for
           Time-Series Analysis on Resource-Constrained Devices." <em>Findings of EMNLP</em>, 2025.</li>
         <li><b><u>P. Trirat</u></b>, Y. Shin, J. Kang, Y. Nam, J. Na, M. Bae, J. Kim, B. Kim, and J. Lee.
@@ -502,7 +527,7 @@
         <li><b><u>P. Trirat</u></b> and J. Lee. "TFAS: Zero-Shot NAS for General Time-Series Analysis with
           Time-Frequency Aware Scoring." <em>Machine Learning</em>, 2025 (ECML PKDD 2025 Journal Track, Oral).</li>
         <li><b><u>P. Trirat</u></b> and J. Lee. "PASTA: Neural Architecture Search for Anomaly Detection in
-          Multivariate Time Series." <em>IEEE TETCI</em>, 2024.</li>
+          Multivariate Time Series." <em>IEEE TETCI</em>, Vol. 9, No. 4, 2025.</li>
         <li>J. Na, <b><u>P. Trirat</u></b>, C. Park, and J. Lee. "Time-PEFT: Temporal and Multichannel
           Complexity-Based Fine-Tuning for Time-Series Foundation Models." <em>ICML</em>, 2026.</li>
         <li><b><u>P. Trirat</u></b>, S. Yoon, and J. Lee. "MG-TAR: Multi-View Graph Convolutional Networks for
@@ -514,25 +539,33 @@
           2025 (ECML PKDD 2025 Journal Track, Oral).</li>
         <li><b><u>P. Trirat</u></b>, J. M. Kwak, J. Heo, H. Lee, and S. J. Hwang. "Multimodal Collaborative
           Debate for Zero-Shot Time Series Reasoning (TS-Debate)." <em>EMNLP</em>, 2026 (Main).</li>
+        <li><b><u>P. Trirat</u></b>, J. Heo, H. Lee, and S. J. Hwang. "Visual Anchoring for Scenario-Guided
+          Forecasting (Visan)." <em>NeurIPS</em>, 2026.</li>
+        <li><b><u>P. Trirat</u></b>. "More Modalities, More Problems: When Multimodal Agentic Debate Hurts
+          Time-Series Reasoning." <em>AACL-IJCNLP</em>, 2026 (Main).</li>
         <li><b><u>P. Trirat</u></b>*, Y. Nam*, T. Kim, and J. Lee. "AnoViz: A Visual Inspection Tool of Anomalies
           in Multivariate Time Series." <em>AAAI</em>, 2023 (Demonstration; * equal contribution).</li>
         <li>Y. Nam, <b><u>P. Trirat</u></b>, T. Kim, Y. Lee, and J. Lee. "Context-Aware Deep Time-Series
           Decomposition for Anomaly Detection in Businesses." <em>ECML PKDD</em>, 2023 (Oral).</li>
         <li><b><u>P. Trirat</u></b>, Y. Shin, S. Kim, and M. Kim. "Generating a Machine Learning Model with a
           Few Sentences (Conversational AutoML)." <em>KSC</em>, 2021.</li>
-        <li><b><u>P. Trirat</u></b>. "Position: Agentic IoT is the Next Computing Paradigm (Agent of Things)."
-          Position paper (ongoing work), 2026.</li>
         <li><b><u>P. Trirat</u></b>, J. M. Kwak, J. Heo, H. Lee, and S. J. Hwang. "MacroLens: A Multi-Task
           Benchmark for Contextual Financial Reasoning under Macroeconomic Scenarios." Preprint,
           arXiv:2606.24950, 2026.</li>
         <li>J. Baek, S. Jeong, S. Park, W. Yeo, M. Kang, <b><u>P. Trirat</u></b>, H. Lee, and S. J. Hwang.
           "OmniRetrieval: Unified Retrieval across Heterogeneous Knowledge Sources." Preprint,
           arXiv:2605.29250, 2026.</li>
+        <li><b><u>P. Trirat</u></b>. "Position: Agentic IoT is the Next Computing Paradigm (Agent of Things)."
+          Position paper (ongoing work), 2026.</li>
+        <li><b><u>P. Trirat</u></b>, S. Zhang, J. Heo, and S. J. Hwang. "Agentic Tool Generation with
+          Hierarchical Goal-Driven Co-Planning." Ongoing work, 2026.</li>
+        <li><b><u>P. Trirat</u></b>, J. Ha, H. Joo, J. Heo, H. Lee, and S. J. Hwang. "Proactive Problem Solver:
+          LLM Agents for the Enterprise R&amp;D Pipeline." Ongoing work, 2026.</li>
       </ol>
     </div>
 
     <footer class="doc">
-      Patara Trirat &nbsp;·&nbsp; Research Statement &nbsp;·&nbsp; Last updated August 2026
+      Patara Trirat &nbsp;·&nbsp; Research Statement &nbsp;·&nbsp; Last updated November 2026
     </footer>
   </article>
 </body>

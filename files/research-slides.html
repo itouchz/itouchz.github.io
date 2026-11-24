@@ -185,6 +185,7 @@
     .flow .fbox {
       flex: 1;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -196,6 +197,11 @@
       font-size: 0.56em;
       font-weight: 700;
       line-height: 1.25;
+    }
+
+    /* children already stack in the column flexbox; a <br> would add an empty line */
+    .flow .fbox br {
+      display: none;
     }
 
     .flow .farr {
@@ -351,7 +357,7 @@
       <!-- 1. Title -->
       <section class="center title-slide dark" data-background-color="#212121">
         <p class="role">RESEARCH STATEMENT</p>
-        <h1>Autonomous, Reliable, and Proactive AI Agents<br />
+        <h1>Autonomous, Perceptive, and Proactive AI Agents<br />
           for Heterogeneous, Temporal Data</h1>
         <p class="who">Patara Trirat</p>
         <p class="aff">
@@ -361,7 +367,7 @@
             <a href="https://www.linkedin.com/in/itouchz/">LinkedIn</a> &nbsp;·&nbsp;
             <a href="https://scholar.google.com/citations?user=fDZjV8EAAAAJ">Google Scholar</a>
           </span><br />
-          <span class="small" style="color:#8f8f8f;">August 2026</span>
+          <span class="small" style="color:#8f8f8f;">November 2026</span>
         </p>
         <p class="kbd">→ / Space to advance &nbsp;·&nbsp; Esc for overview</p>
       </section>
@@ -369,10 +375,10 @@
       <!-- 2. Interests & Vision -->
       <section>
         <h2>Research Interests &amp; Vision</h2>
-        <p class="small"><strong>I build self-improving AI agents that reason reliably over temporal,
-          multimodal, and physical-world data</strong>, advancing agent-based task automation toward
-          human–agent collaboration, and exploring new frontiers of perception in autonomous agents
-          operating in complex, real-world environments.</p>
+        <p class="small"><strong>I build self-improving AI agents that perceive, represent, and reason reliably
+          over temporal, multimodal, and physical-world data</strong>, advancing agentic task automation toward
+          more effective human–agent collaboration, and using multimodal LLMs to enhance perception and
+          representation learning for autonomous agents in complex, real-world environments.</p>
         <div class="arc">
           <div class="step s1">Automating ML</div>
           <span class="ar">→</span>
@@ -384,8 +390,8 @@
           <ul class="small">
             <li><strong>Greater autonomy</strong>: agents that plan, build their own tools, predict their
               success</li>
-            <li><strong>Real-world perception</strong>: reliable reasoning over temporal, numerical &amp;
-              multimodal data</li>
+            <li><strong>Broader real-world perception &amp; better representations</strong>: perceive
+              temporal, numerical &amp; multimodal data and represent it faithfully</li>
           </ul>
           <ul class="small">
             <li><strong>Proactiveness</strong>: agents that surface problems and act on their own initiative</li>
@@ -404,7 +410,7 @@
             <h3>AI Agents for Task Automation</h3>
             <ul>
               <li>AutoML-Agent · Multi-View Encoders</li>
-              <li>MONAQ · Tooler-Agents</li>
+              <li>MONAQ · Agentic Tool Generation</li>
               <li>Proactive Problem Solver</li>
             </ul>
           </div>
@@ -437,7 +443,7 @@
           data retrieval to a deployment-ready model, exploring competing plans instead of committing to
           one.</p>
         <div class="flow">
-          <div class="fbox">User task<br />&amp; data</div>
+          <div class="fbox"><span>User task</span><span>&amp; data</span></div>
           <div class="farr">→</div>
           <div class="fbox">Retrieval-augmented planning</div>
           <div class="farr">→</div>
@@ -462,23 +468,25 @@
           <div>
             <h3>Multi-View Encoders <span class="pill">ICLR 2026</span> <span class="pill">Outstanding Paper</span></h3>
             <ul class="small">
-              <li>Predict an agentic workflow's success <em>before</em> running it</li>
+              <li><em>Agentic Predictor</em>: predict an agentic workflow's success <em>before</em> running it</li>
               <li>Fuses code, prompt, and interaction-graph views with cross-domain pretraining</li>
             </ul>
-            <h3 style="margin-top:0.5em;">MONAQ <span class="pill">EMNLP 2025</span></h3>
+            <h3 style="margin-top:0.5em;">MONAQ <span class="pill">EMNLP 2025 Findings</span></h3>
             <ul class="small">
               <li>Architecture search recast as LLM-driven multi-objective <em>querying</em> for on-device
                 models</li>
             </ul>
           </div>
           <div>
-            <h3>Tooler-Agents <span class="pill ongoing">ongoing</span></h3>
+            <h3>Agentic Tool Generation <span class="pill ongoing">ongoing</span></h3>
             <ul class="small">
-              <li>Builds &amp; verifies a persistent, dependency-aware toolset on demand</li>
+              <li>Hierarchical goal-driven co-planning builds &amp; verifies a persistent, dependency-aware
+                toolset on demand</li>
             </ul>
             <h3 style="margin-top:0.5em;">Proactive Problem Solver <span class="pill ongoing">ongoing</span></h3>
             <ul class="small">
-              <li>Decides <em>what to investigate</em>: ambient proactivity under policy-gated autonomy</li>
+              <li>Decides <em>what to investigate</em> in the enterprise R&amp;D pipeline: ambient proactivity
+                under policy-gated autonomy</li>
             </ul>
           </div>
         </div>
@@ -531,10 +539,10 @@
               (20 tasks, 3 benchmarks)</p>
           </div>
           <div class="note">
-            <strong>But naive scaling backfires.</strong> <em>More Modalities, More Problems</em>: debate can
-            cost ≈22× the tokens and 12× the time, with 74% of errors from a shared modality bias.
-            <em>Visual Anchoring</em> (closed-form drift bound) and <em>MacroLens</em> (4,416-equity,
-            leakage-controlled benchmark) add the theory and evaluation.
+            <strong>But naive scaling backfires.</strong> <em>More Modalities, More Problems</em> (AACL-IJCNLP 2026):
+            debate can cost ≈22× the tokens and 12× the time, with 74% of errors from a shared modality bias.
+            <em>Visual Anchoring</em> (NeurIPS 2026; closed-form drift bound) and <em>MacroLens</em>
+            (4,416-equity, leakage-controlled benchmark) add the theory and evaluation.
           </div>
         </div>
       </section>
@@ -575,10 +583,10 @@
       <!-- 9. Future -->
       <section>
         <h2>Future Research</h2>
-        <p class="small">One program, pursued along three directions, one per pillar.</p>
+        <p class="small">One program, pursued along three directions.</p>
         <div class="pillars">
           <div class="card p1">
-            <div class="n">DIRECTION 1 · AUTONOMY</div>
+            <div class="n">DIRECTION 1 · GREATER AUTONOMY</div>
             <h3>Self-Improving Agentic Systems</h3>
             <p class="tiny muted">Agents that synthesize, verify, and reuse their own tools and workflows, so
               competence compounds across tasks.</p>
@@ -586,12 +594,12 @@
               workflow-prediction benchmark.</p>
           </div>
           <div class="card p2">
-            <div class="n">DIRECTION 2 · RELIABILITY</div>
-            <h3>Verification, Not Persuasion</h3>
-            <p class="tiny muted">Reasoning adjudicated by programmatic verification, calibration, and
-              theory-backed control.</p>
-            <p class="tiny"><strong>Near-term:</strong> verification-grounded reasoning library, plus an
-              auditability &amp; calibration suite.</p>
+            <div class="n">DIRECTION 2 · PERCEPTION</div>
+            <h3>Broader Real-World Perception &amp; Better Representations</h3>
+            <p class="tiny muted">Multimodal time-series representations that let agents perceive more of the
+              world, with conclusions settled by verification, not persuasion.</p>
+            <p class="tiny"><strong>Near-term:</strong> open multimodal representations with a
+              verification-grounded reasoning library, plus a calibration &amp; auditability suite.</p>
           </div>
           <div class="card p3">
             <div class="n">DIRECTION 3 · PROACTIVENESS</div>
